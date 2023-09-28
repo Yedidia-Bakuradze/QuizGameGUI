@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imageforicon.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qustion%20editor%20pic2.png")]
 
 
