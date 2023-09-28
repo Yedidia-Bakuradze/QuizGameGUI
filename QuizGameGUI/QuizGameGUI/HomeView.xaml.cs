@@ -41,5 +41,10 @@ namespace QuizGameGUI
             Window window = Window.GetWindow(this);
             window.Content = new QuizCreatorView(username);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
