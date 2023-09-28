@@ -16,15 +16,24 @@ using System.Windows.Shapes;
 namespace QuizGameGUI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LobbyVIew.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LobbyView : UserControl
     {
-        public MainWindow()
+        public LobbyView()
         {
             InitializeComponent();
+        }
+        private void Signup(object sender, RoutedEventArgs e)
+        {
+            Window window = Window.GetWindow(this);
+            window.Content = new SignupView();
+        }
+
+        private void Login(object sender, RoutedEventArgs e)
+        {
             Window windows = Window.GetWindow(this);
-            windows.Content = new LobbyView();
+            windows.Content = new LoginView();
         }
     }
 }

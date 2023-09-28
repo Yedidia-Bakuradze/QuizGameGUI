@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="QuizGameGUI.QuestionEditorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuizGameGUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="questionCounterField" Grid.Row="0" Grid.Column="0" Margin="10" Content="Question: x / y" FontSize="24"/>
+
+        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="theQuestionFiled" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"
+             HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="24" Width="300" Height="40"/>
+
+        <Label Grid.Row="1" Grid.Column="1" Content="Enter the first wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Enter the second wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <Label Grid.Row="5" Grid.Column="1" Content="Enter the third wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <Label Grid.Row="7" Grid.Column="1" Content="Enter the only ture answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+
+        <TextBox x:Name="fAns1Field" Grid.Row="1" Grid.Column="2"/>
+        <TextBox x:Name="fAns2Field" Grid.Row="3" Grid.Column="2"/>
+        <TextBox x:Name="fAns3Field" Grid.Row="5" Grid.Column="2"/>
+        <TextBox x:Name="tAnsField" Grid.Row="7" Grid.Column="2" TextChanged="TextboxValueChanged"/>
+
+        <Button x:Name="continueButton" IsEnabled="False" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"
+            Content="Continue to the next question" Width="250" Height="30" Click="AddQuestion"/>
+
+
+    </Grid>
+</UserControl>

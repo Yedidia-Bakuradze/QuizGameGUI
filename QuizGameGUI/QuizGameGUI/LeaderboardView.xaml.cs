@@ -16,15 +16,20 @@ using System.Windows.Shapes;
 namespace QuizGameGUI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LeaderboardView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LeaderboardView : UserControl
     {
-        public MainWindow()
+        public LeaderboardView()
         {
             InitializeComponent();
-            Window windows = Window.GetWindow(this);
-            windows.Content = new LobbyView();
+
+            var top10users = UserManager.ListOfUsers.OrderByDescending(user => user.Score).Take(10).ToList();
+            foreach (var user in top10users)
+            {
+                listPlayers.Items.Add(user.Username);
+                listScores.Items.Add(user.Score);
+            }
         }
     }
 }

@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid RenderTransformOrigin="0.511,0.516">
+            <Grid.Background>
+                <ImageBrush />
+            </Grid.Background>
+        </Grid>
     </Grid>
 </Window>
