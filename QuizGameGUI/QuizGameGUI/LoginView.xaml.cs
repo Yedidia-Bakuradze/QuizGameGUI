@@ -51,7 +51,7 @@ namespace QuizGameGUI
                 }
                 //If the user wasn't found:
             }
-            catch (InvalidOperationException ex)
+            catch (InvalidOperationException)
             {
                 //Making suer that 2 types of error aren't shown up at the same time:
                 passwordResetRediraction.Visibility = Visibility.Hidden;
