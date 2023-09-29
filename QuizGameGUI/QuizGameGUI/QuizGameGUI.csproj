@@ -157,5 +157,20 @@
   <ItemGroup>
     <Folder Include="Photo\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageForLobby.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageForLeaderboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageForIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="qustion editor pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="qustion editor pic2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

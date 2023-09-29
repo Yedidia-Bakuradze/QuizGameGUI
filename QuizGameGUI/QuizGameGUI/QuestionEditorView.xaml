@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/qustion editor pic2.png"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -27,14 +30,14 @@
 
         <Label x:Name="questionCounterField" Grid.Row="0" Grid.Column="0" Margin="10" Content="Question: x / y" FontSize="24"/>
 
-        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" FontFamily="Arial Black"/>
         <TextBox x:Name="theQuestionFiled" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"
              HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="24" Width="300" Height="40"/>
 
-        <Label Grid.Row="1" Grid.Column="1" Content="Enter the first wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
-        <Label Grid.Row="3" Grid.Column="1" Content="Enter the second wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
-        <Label Grid.Row="5" Grid.Column="1" Content="Enter the third wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
-        <Label Grid.Row="7" Grid.Column="1" Content="Enter the only ture answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Enter the first wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Enter the second wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label Grid.Row="5" Grid.Column="1" Content="Enter the third wrong answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label Grid.Row="7" Grid.Column="1" Content="Enter the only ture answer:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Bold" FontFamily="Arial Black"/>
 
         <TextBox x:Name="fAns1Field" Grid.Row="1" Grid.Column="2"/>
         <TextBox x:Name="fAns2Field" Grid.Row="3" Grid.Column="2"/>
