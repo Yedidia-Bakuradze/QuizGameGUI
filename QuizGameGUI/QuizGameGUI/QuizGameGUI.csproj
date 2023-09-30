@@ -75,9 +75,6 @@
       <DependentUpon>QuestionEditorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Quiz.cs" />
-    <Compile Include="QuizCreatorView.xaml.cs">
-      <DependentUpon>QuizCreatorView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SignupView.xaml.cs">
       <DependentUpon>SignupView.xaml</DependentUpon>
     </Compile>
@@ -116,10 +113,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="QuestionEditorView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="QuizCreatorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

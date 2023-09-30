@@ -25,6 +25,9 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="10"/>
             <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -33,7 +36,7 @@
         <!--Question's Field-->
         <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?"
                HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"
-               FontSize="14" FontFamily="Arial Black"/>
+               FontSize="14" FontFamily="Arial Black" Margin="0,0,0,40"/>
         <TextBox x:Name="theQuestionFiled" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
                  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"
                  HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
@@ -42,30 +45,38 @@
         <!--Answers' Field:-->
         
         <!--User's directions:-->
-        <Label Grid.Row="1" Grid.Column="1" Content="Enter Your first wrong answer:" 
+        <Label Grid.Row="1" Grid.Column="1" Content="Enter the Theme Of The Quiz:"   
                HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
-        <Label Grid.Row="3" Grid.Column="1" Content="Enter Your second wrong answer:"
+        <Label Grid.Row="3" Grid.Column="1" Content="Enter Your first wrong answer:" 
                HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
-        <Label Grid.Row="5" Grid.Column="1" Content="Enter Your third wrong answer:" 
+        <Label Grid.Row="5" Grid.Column="1" Content="Enter Your second wrong answer:"
                HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
-        <Label Grid.Row="7" Grid.Column="1" Content="Enter Your only ture answer:"   
+        <Label Grid.Row="7" Grid.Column="1" Content="Enter Your third wrong answer:" 
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label Grid.Row="9" Grid.Column="1" Content="Enter Your only ture answer:"   
                HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
         
         <!--User's Insert Field-->
-        <TextBox x:Name="fAns1Field" Grid.Row="1" Grid.Column="2"
+        <TextBox x:Name="quizTheme" Grid.Row="1" Grid.Column="2"
                  FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
-        <TextBox x:Name="fAns2Field" Grid.Row="3" Grid.Column="2"
+        <TextBox x:Name="fAns1Field" Grid.Row="3" Grid.Column="2"
                  FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
-        <TextBox x:Name="fAns3Field" Grid.Row="5" Grid.Column="2"
+        <TextBox x:Name="fAns2Field" Grid.Row="5" Grid.Column="2"
                  FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
-        <TextBox x:Name="tAnsField" Grid.Row="7" Grid.Column="2"
+        <TextBox x:Name="fAns3Field" Grid.Row="7" Grid.Column="2"
+                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
+        <TextBox x:Name="tAnsField" Grid.Row="9" Grid.Column="2"
                  FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
         
         <!--Submit Button (Available only when all the fields are full):-->
-        <Button x:Name="continueButton" IsEnabled="False" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="8"
-                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"
-                Content="Continue to the next question" Width="250" Height="30" Click="AddQuestion"/>
-
+        <Button x:Name="quizDoneButton" IsEnabled="False" Grid.Column="2"  Grid.Row="10"
+            HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
+            Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone"/>
+        
+        <Button x:Name="nextQuestionButton" IsEnabled="False" Grid.Column="1" Grid.Row="10"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
+                Content="Add Another Question" Width="250" Height="30" Click="AddQuestion"/>
+        
 
     </Grid>
 </UserControl>

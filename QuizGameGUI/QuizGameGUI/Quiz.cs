@@ -9,13 +9,11 @@ namespace QuizGameGUI
     internal class Quiz
     {
         public string Category { get; set; }
-        public string Description { get; set; }
         public List<Question> QuizQuestions { get; set; }
-        public Quiz(string category, string description)
+        public Quiz(string category)
         {
             QuizQuestions = new List<Question>();
             Category = category;
-            Description = description;
         }
     }
 }

@@ -19,7 +19,6 @@ C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGam
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\LobbyVIew.g.cs
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\LoginView.g.cs
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\PasswordResetView.g.cs
-C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizCreatorView.g.cs
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuestionEditorView.g.cs
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\SignupView.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\HomeView.baml
@@ -27,7 +26,6 @@ C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGam
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\LobbyVIew.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\LoginView.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\PasswordResetView.baml
-C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizCreatorView.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuestionEditorView.baml
 C:\Users\meirc\Desktop\Repos\TeamProject\QuizGameGUI\QuizGameGUI\QuizGameGUI\bin\Debug\QuizGameGUI.exe.config
 C:\Users\meirc\Desktop\Repos\TeamProject\QuizGameGUI\QuizGameGUI\QuizGameGUI\bin\Debug\QuizGameGUI.exe
