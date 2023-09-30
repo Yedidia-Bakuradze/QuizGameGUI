@@ -37,7 +37,7 @@ namespace QuizGameGUI
         }
         public void ShowCount()
         {
-            questionCounterField.Content = $"Question {questionCount} / {NumOfQuestions}.";
+            questionCounterField.Content = $"Question Number: {questionCount} / {NumOfQuestions}";
         }
 
         //Submits the questions and adds it to the list:

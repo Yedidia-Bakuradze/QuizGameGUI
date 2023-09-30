@@ -28,20 +28,24 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
+        <!--Communistical Image:-->
         <Rectangle Grid.Column="0" Grid.Row="0" Margin="10,0,0,0" HorizontalAlignment="Left" Width="50">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/imageForIcon.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
+        
+        <!--Welcome Message:-->
         <Label x:Name="userTitle" Margin="70,0,0,0" Grid.Column="0" Grid.Row="0" Content="Hello User"
            VerticalAlignment="Center" FontSize="24" Foreground="#FFF15811" FontWeight="Bold"/>
-        <Label x:Name="MainMenu" Margin="60,10,0,0" Grid.Column="1" Content="Main menu"
+        <Label Margin="60,10,0,0" Grid.Column="1" Content="Main Menu"
                FontSize="26" Foreground="Blue" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         
-        
+        <!--Logout Button:-->
         <Button Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"
             Content="Logout" Margin="0,0,20,0" Click="Logout"/>
-
+        
+        <!--Play and Create Buttons:-->
         <Button Grid.Column="1" Grid.Row="2" Content="Start to play" Background="{x:Null}" FontSize="24" Foreground="#FF212DF1" FontWeight="Bold" FontFamily="Arial Black" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="4" Content="Create a Quiz" Click="CreateQuiz" Background="{x:Null}" FontSize="24" FontWeight="Bold" Foreground="#FF212DF1" FontFamily="Arial Black"/>
     </Grid>

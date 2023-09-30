@@ -20,19 +20,25 @@
             <RowDefinition Height="80"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-
+        
+        <!--Main Title:-->
         <TextBlock Text="Leaderboard" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0"
                HorizontalAlignment="Center" FontSize="30" Foreground="#FFC92ADA" FontWeight="Bold" VerticalAlignment="Center"/>
 
-        <ListBox x:Name="listPlayers" FontSize="24" Foreground="#FFA20707" HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="1" Background="{x:Null}">
-        </ListBox>
-        <ListBox x:Name="listScores" FontSize="24" Foreground="#FFA20707"
-             HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="2" Background="{x:Null}">
-        </ListBox>
-
+        
+        <!--Board Titles:-->
         <TextBlock Text="Top" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"
                FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Players" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"
+               FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Scores" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"
+               FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Total Played" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"
+               FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
+        
+        <!--The Borads and Lists:-->
         <StackPanel Grid.Row="2" Grid.Column="0">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="1" FontSize="24" Foreground="#FFC92ADA"/>
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="2" FontSize="24" Foreground="#FFC92ADA"/>
@@ -45,13 +51,13 @@
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="9" FontSize="24" Foreground="#FFC92ADA"/>
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="10" FontSize="24" Foreground="#FFC92ADA"/>
         </StackPanel>
-        <TextBlock Text="Players" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"
-               FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
-
-        <TextBlock Text="Scores" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"
-               FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
-
-        <TextBlock Text="Total Played" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"
-               FontSize="24" Margin="0,0,0,10" Foreground="#FFC92ADA" VerticalAlignment="Bottom"/>
+        <!--Players' List:-->
+        <ListBox x:Name="listPlayers" FontSize="24" Foreground="#FFA20707"
+                 HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="1" Background="{x:Null}">
+        </ListBox>
+        <!--Score List:-->
+        <ListBox x:Name="listScores" FontSize="24" Foreground="#FFA20707"
+             HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="2" Background="{x:Null}">
+        </ListBox>
     </Grid>
 </UserControl>

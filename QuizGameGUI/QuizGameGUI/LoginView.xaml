@@ -25,36 +25,34 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
+         
+        <!--Fields' Titles:-->
         <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Your Username:" FontFamily="Arial" Foreground="White" FontSize="14"/>
         <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Your Password:" FontSize="16" FontFamily="Arial" Foreground="White"/>
-        <TextBox x:Name="usernameField" Grid.Column="1" Grid.Row="1" TextChanged="TextboxTextChanged" Background="#FFFCAAFF"/>
-        <TextBox x:Name="passwordField" Grid.Column="1" Grid.Row="3" TextChanged="TextboxTextChanged" Background="#FFFCAAFF"/>
+        
+        <!--Insert Fields:-->
+        <TextBox x:Name="usernameField" Grid.Column="1" Grid.Row="1"
+                 FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#FFFCAAFF"/>
+        <TextBox x:Name="passwordField" Grid.Column="1" Grid.Row="3"
+                 FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#FFFCAAFF"/>
         <Button x:Name="submitButton" Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center" Width="100"
             Margin="0,10,0,0" Content="Submit" Click="UserLogin" Background="#FF16AFFB"/>
-
+        
+        <!--Error Type: Wrong Password:-->
         <Label x:Name="errorMessage" Visibility="Hidden" Grid.Column="1" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center"
            Content="Incorrect Password!" Foreground="Red"/>
-
-        
         <StackPanel x:Name="passwordResetRediraction" Visibility="Hidden" Grid.Column="1" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Reset your password:"/>
             <Button Content="Reset Now" Margin="10,0,0,0" Click="PasswordResetButton"/>
         </StackPanel>
         
+        <!--Error Type: User not found:-->
         <StackPanel x:Name="signupRediraction" Visibility="Hidden" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5">
             <Label Content="Create an accout:" Foreground="White"/>
             <Button Content="Signup Now" Margin="10,0,0,0" Click="SignupButton" Background="#FF16AFFB"/>
         </StackPanel>
-        
-        
-        <Label Content="B.H" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="-29.875,2.87">
-            <Label.Style>
-                <Style/>
-            </Label.Style>
-            <Label.Background>
-                <ImageBrush/>
-            </Label.Background>
-        </Label>
 
+
+        <Label Content="B.H" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="-29.875,2.87"/>
     </Grid>
 </UserControl>

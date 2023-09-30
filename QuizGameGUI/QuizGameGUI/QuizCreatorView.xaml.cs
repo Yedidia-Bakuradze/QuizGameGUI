@@ -33,11 +33,7 @@ namespace QuizGameGUI
             else { startButton.IsEnabled = false; }
         }
 
-        private void ItemSelected(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrEmpty(discriptionField.Text) && !string.IsNullOrEmpty(numOfQuestionsField.Text) && ((ListBoxItem)listOfTypes.SelectedItem).Content != null) { startButton.IsEnabled = true; }
-            else { startButton.IsEnabled = false; }
-        }
+
 
         private void StartButtonActivated(object sender, RoutedEventArgs e)
         {
@@ -51,6 +47,12 @@ namespace QuizGameGUI
                 Window window = Window.GetWindow(this);
                 window.Content = new QuestionEditorView(Username, ((ListBoxItem)listOfTypes.SelectedItem).Content.ToString(), discriptionField.Text, numOfQuestions);
             }
+        }
+
+        private void ItemSelected(object sender, SelectionChangedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(discriptionField.Text) && !string.IsNullOrEmpty(numOfQuestionsField.Text) && ((ListBoxItem)listOfTypes.SelectedItem).Content != null) { startButton.IsEnabled = true; }
+            else { startButton.IsEnabled = false; }
         }
     }
 }
