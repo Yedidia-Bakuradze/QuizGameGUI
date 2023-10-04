@@ -21,53 +21,82 @@ namespace QuizGameGUI
     public partial class PlayView : UserControl
     {
         Quiz quiz;
-        int numOfQuestion;
+        int numOfQuestion,questionCount = 0,numRightQuestions=0;
         Question question;
-
+        User currentUser;
         List<Button> buttons;
         public PlayView(string username)
         {
             InitializeComponent();
             //Accessing the user from the database:
-            var user = from usr in UserManager.ListOfUsers
-                       where usr.Username == username
-                       select usr;
-
+            currentUser = UserManager.ListOfUsers.First(user => user.Username == username);
 
             //Getting a random quiz from our database
             quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
+            creatorUsername.Content = quiz.Creator;
             
             //Getting the number of question in the current quiz:
-            numOfQuestion = quiz.NumOfQuestions;
+            numOfQuestion = quiz.QuizQuestions.Count();
 
             //Creating an list of operational buttons:
             buttons = new List<Button>() { btn1,btn2,btn3,btn4};
-            //Updating the question counter message:
-            questionCountLable.Content = $"Question 0 / {numOfQuestion}";
-
-            //Setting up the first question:
-            question = quiz.QuizQuestions[0];
-
-            //Creating a backup list of the optional answers:
-            List<string> answer = question.ListOfAnswers;
-            
-            //Iterating thorough all the buttons - and setting the answers:
-            foreach (Button button in buttons)
-            {
-                int ansIndex = new Random().Next(answer.Count());
-                button.Content = answer[ansIndex];
-                answer.RemoveAt(ansIndex);
-            }
-
+            RenderQuestion();
         }
 
         private void UsersAnswer(object sender, RoutedEventArgs e)
         {
             //Getting the button's name that called this method:
             Button button = sender as Button;
+            //Checking rather the user was right - Changing colors:
+            if(button.Content as string == question.Tans)
+            {
+                //Go to next question 
+                button.Background = new SolidColorBrush(Colors.Green);
+            }
+            else
+            {
+                button.Background= new SolidColorBrush(Colors.Red);
+                var rightAnsButton = buttons.First(btn => (string) btn.Content == question.Tans.ToString());
+                rightAnsButton.Background = new SolidColorBrush(Colors.Green);
+            }
 
-            //Chceking rether the user was right:
-            if(button.Content as string == question.Tans) { }
+            //Getting the next question:
+            questionCount++;
+            RenderQuestion();
         }
+
+
+        private void RenderQuestion()
+        {
+            if (numOfQuestion > questionCount)
+            {
+                //Updating the question counter message:
+                questionCountLable.Content = $"Question {questionCount + 1} / {numOfQuestion}";
+                rightQuestionsCounter.Content = $"{questionCount} / {numOfQuestion} Were right.";
+                
+                //Setting up the first question:
+                question = quiz.QuizQuestions[questionCount];
+
+                //Creating a backup list of the optional answers:
+                List<string> answer = question.ListOfAnswers;
+
+                //Iterating thorough all the buttons - and setting the answers:
+                foreach (Button button in buttons)
+                {
+                    int ansIndex = new Random().Next(answer.Count());
+                    button.Content = answer[ansIndex];
+                    answer.RemoveAt(ansIndex);
+                }
+
+            }
+            //Leaving the quiz:
+            else 
+            {
+                MessageBox.Show($"You've Finished The Quiz\nYou've answered {rightQuestionsCounter} questions right.");
+                Window window = Window.GetWindow(this);
+                window.Content = new HomeView(currentUser.Username);
+            }
+        }
+
     }
 }

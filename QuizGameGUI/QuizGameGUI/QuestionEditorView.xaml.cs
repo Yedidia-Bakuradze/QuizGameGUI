@@ -67,8 +67,7 @@ namespace QuizGameGUI
             quiz.QuizQuestions.Add(new Question(theQuestionFiled.Text, fAns1Field.Text, fAns2Field.Text, fAns3Field.Text, tAnsField.Text, Username));
             //Updates the category:
             quiz.Category = quizTheme.Text;
-            //Updates the number of question:
-            quiz.NumOfQuestions = questionCount;
+
 
             //Adding the quiz to the global quiz list:
             UserManager.ListOfQuizzes.Add(quiz);

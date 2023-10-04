@@ -10,13 +10,17 @@ namespace QuizGameGUI
     {
         public string Category { get; set; }
         public string Creator { get; set; }
-        public int NumOfQuestions { get; set; }
         public List<Question> QuizQuestions { get; set; }
         public Quiz(string category,int numOfQuestion, string creator)
         {
-            QuizQuestions = new List<Question>() { new Question("What's my name", "s", "s", "s", "Yedidia", "s")};
+            QuizQuestions = new List<Question>() {
+                new Question("What's My Name", "Moshe","Yehuda","Elia","Yedidia","admin"),
+                new Question("What's The Capital City of Russia", "TLV","Jerusalem","New-York","Russia","admin"),
+                new Question("What's My Last Name", "Elanovitz","Shoshi","Blabla","Bakuradze","admin"),
+                new Question("What's My College's Name", "JBL","Giga-El","High-Tech TM","JCT","admin"),
+
+            };
             Category = category;
-            NumOfQuestions = numOfQuestion;
             Creator = creator;
         }
     }
