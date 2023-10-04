@@ -34,7 +34,7 @@ namespace QuizGameGUI
 
             //Getting a random quiz from our database
             quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
-            creatorUsername.Content = quiz.Creator;
+            creatorUsername.Content = $"Made by: {quiz.Creator}";
             
             //Getting the number of question in the current quiz:
             numOfQuestion = quiz.QuizQuestions.Count();

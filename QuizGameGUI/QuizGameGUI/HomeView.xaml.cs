@@ -42,6 +42,7 @@ namespace QuizGameGUI
             window.Content = new QuestionEditorView(username);
         }
 
+        //Redirects the user to play a quiz:
         private void StartQuiz(object sender, RoutedEventArgs e)
         {
             Window window = Window.GetWindow(this);
