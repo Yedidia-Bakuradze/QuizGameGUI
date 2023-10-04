@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
         
         <!--Upper navbar:-->
-        <Label Content="Question x out of y" Margin="10" FontSize="12"
+        <Label x:Name="questionCountLable" Content="Question x out of y" Margin="10" FontSize="12"
                VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
                Content="Creator: Unlnow" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12"/>

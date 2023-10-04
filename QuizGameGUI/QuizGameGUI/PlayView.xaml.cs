@@ -21,6 +21,10 @@ namespace QuizGameGUI
     public partial class PlayView : UserControl
     {
         Quiz quiz;
+        int numOfQuestion;
+        Question question;
+
+        List<Button> buttons;
         public PlayView(string username)
         {
             InitializeComponent();
@@ -28,15 +32,42 @@ namespace QuizGameGUI
             var user = from usr in UserManager.ListOfUsers
                        where usr.Username == username
                        select usr;
+
+
             //Getting a random quiz from our database
-            int index = new Random().Next(UserManager.ListOfQuizzes.Count);
-            quiz = UserManager.ListOfQuizzes[index];
+            quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
+            
+            //Getting the number of question in the current quiz:
+            numOfQuestion = quiz.NumOfQuestions;
+
+            //Creating an list of operational buttons:
+            buttons = new List<Button>() { btn1,btn2,btn3,btn4};
+            //Updating the question counter message:
+            questionCountLable.Content = $"Question 0 / {numOfQuestion}";
+
+            //Setting up the first question:
+            question = quiz.QuizQuestions[0];
+
+            //Creating a backup list of the optional answers:
+            List<string> answer = question.ListOfAnswers;
+            
+            //Iterating thorough all the buttons - and setting the answers:
+            foreach (Button button in buttons)
+            {
+                int ansIndex = new Random().Next(answer.Count());
+                button.Content = answer[ansIndex];
+                answer.RemoveAt(ansIndex);
+            }
+
         }
 
         private void UsersAnswer(object sender, RoutedEventArgs e)
         {
             //Getting the button's name that called this method:
+            Button button = sender as Button;
 
+            //Chceking rether the user was right:
+            if(button.Content as string == question.Tans) { }
         }
     }
 }

@@ -10,15 +10,15 @@ namespace QuizGameGUI
     {
         public string Owner { get; set; }
         public string Title { get; set; }
-        public List<string> WrongAns { get; set; }
+        public List<string> ListOfAnswers { get; set; }
         public string Tans { get; set; }
 
         public Question(string title, string fans1, string fans2, string fans3, string tans, string username)
         {
             Owner = username;
             Title = title;
-            WrongAns = new List<string>() { fans1, fans2, fans3 };
             Tans = tans;
+            ListOfAnswers = new List<string>() { fans1, fans2, fans3 ,tans};
         }
     }
 }

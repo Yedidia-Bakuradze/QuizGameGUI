@@ -14,7 +14,7 @@ namespace QuizGameGUI
         public List<Question> QuizQuestions { get; set; }
         public Quiz(string category,int numOfQuestion, string creator)
         {
-            QuizQuestions = new List<Question>();
+            QuizQuestions = new List<Question>() { new Question("What's my name", "s", "s", "s", "Yedidia", "s")};
             Category = category;
             NumOfQuestions = numOfQuestion;
             Creator = creator;
