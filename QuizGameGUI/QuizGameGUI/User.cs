@@ -15,7 +15,7 @@ namespace QuizGameGUI
         //User's account password:
         public string Password { get; set; }
         //User's total score:
-        public int Score { get; }
+        public int Score { get; set; } = 0;
         //User's personal quiz list:        
         public List<Quiz> PersonalQuizzes { get; set; }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,7 +22,7 @@ namespace QuizGameGUI
     public partial class PlayView : UserControl
     {
         Quiz quiz;
-        int numOfQuestion,questionCount = 0,numRightQuestions=0;
+        int numOfQuestion,questionCount = 0,numOfRightQuestions=0;
         Question question;
         User currentUser;
         List<Button> buttons;
@@ -40,7 +41,12 @@ namespace QuizGameGUI
 
             //Creating an list of operational buttons:
             buttons = new List<Button>() { btn1,btn2,btn3,btn4};
-            RenderQuestion();
+            QuestionGenerator();
+        }
+
+        private void nextQuestionButton_Click(object sender, RoutedEventArgs e)
+        {
+            QuestionGenerator();
         }
 
         private void UsersAnswer(object sender, RoutedEventArgs e)
@@ -50,7 +56,9 @@ namespace QuizGameGUI
             //Checking rather the user was right - Changing colors:
             if(button.Content as string == question.Tans)
             {
-                //Go to next question 
+                currentUser.Score++;
+                numOfRightQuestions++;
+                rightQuestionsCounter.Content = $"{numOfRightQuestions} / {numOfQuestion} Were right.";
                 button.Background = new SolidColorBrush(Colors.Green);
             }
             else
@@ -62,17 +70,24 @@ namespace QuizGameGUI
 
             //Getting the next question:
             questionCount++;
-            RenderQuestion();
         }
 
 
-        private void RenderQuestion()
+        //This method generates the next questions:
+        private void QuestionGenerator()
         {
+            nextQuestionButton.Content = (numOfQuestion - questionCount == 1) ? "Finish The Quiz" : "Next Question";
+
+            //Setting the colors of the buttons to grey:
+            foreach(Button button in buttons)
+            {
+                button.Background = new SolidColorBrush(Colors.LightGray);
+            }
+
             if (numOfQuestion > questionCount)
             {
                 //Updating the question counter message:
                 questionCountLable.Content = $"Question {questionCount + 1} / {numOfQuestion}";
-                rightQuestionsCounter.Content = $"{questionCount} / {numOfQuestion} Were right.";
                 
                 //Setting up the first question:
                 question = quiz.QuizQuestions[questionCount];
@@ -92,7 +107,7 @@ namespace QuizGameGUI
             //Leaving the quiz:
             else 
             {
-                MessageBox.Show($"You've Finished The Quiz\nYou've answered {rightQuestionsCounter} questions right.");
+                MessageBox.Show($"You've Finished The Quiz\nYou've answered {numOfRightQuestions} questions right.");
                 Window window = Window.GetWindow(this);
                 window.Content = new HomeView(currentUser.Username);
             }
