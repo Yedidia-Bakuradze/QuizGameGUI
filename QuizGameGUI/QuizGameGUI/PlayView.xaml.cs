@@ -44,9 +44,16 @@ namespace QuizGameGUI
             QuestionGenerator();
         }
 
-        private void nextQuestionButton_Click(object sender, RoutedEventArgs e)
+        //Triggered when the user presses the submit answer button:
+        private void NextQuestionButtonClicked(object sender, RoutedEventArgs e)
         {
             QuestionGenerator();
+        }
+
+        //Triggered when user presses the exit button:
+        private void ExitButtonClick(object sender, RoutedEventArgs e)
+        {
+            ExitQuizMessage();
         }
 
         private void UsersAnswer(object sender, RoutedEventArgs e)
@@ -68,16 +75,17 @@ namespace QuizGameGUI
                 rightAnsButton.Background = new SolidColorBrush(Colors.Green);
             }
 
-            //Getting the next question:
+            //Enables the submit buttons' ability:
+            submitAnswerButton.IsEnabled = true;
+            //Moving foreword with the question index's value:
             questionCount++;
         }
-
 
         //This method generates the next questions:
         private void QuestionGenerator()
         {
-            nextQuestionButton.Content = (numOfQuestion - questionCount == 1) ? "Finish The Quiz" : "Next Question";
-
+            submitAnswerButton.Content = (numOfQuestion - questionCount == 1) ? "Finish The Quiz" : "Next Question";
+            submitAnswerButton.IsEnabled = false;
             //Setting the colors of the buttons to grey:
             foreach(Button button in buttons)
             {
@@ -107,10 +115,16 @@ namespace QuizGameGUI
             //Leaving the quiz:
             else 
             {
-                MessageBox.Show($"You've Finished The Quiz\nYou've answered {numOfRightQuestions} questions right.");
-                Window window = Window.GetWindow(this);
-                window.Content = new HomeView(currentUser.Username);
+                ExitQuizMessage();
             }
+        }
+
+        //A message that would display before the user returns to the home screen:
+        private void ExitQuizMessage()
+        {
+            MessageBox.Show($"You've Finished The Quiz\nYou've answered {numOfRightQuestions} questions right.");
+            Window window = Window.GetWindow(this);
+            window.Content = new HomeView(currentUser.Username);
         }
 
     }
