@@ -16,5 +16,7 @@ namespace QuizGameGUI
             new User("Meir","Meir Crombie","3",40),
             new User("admin","admin","admin",40),
         };
+
+        public static List<Quiz> ListOfQuizzes { get; } = new List<Quiz>();
     }
 }

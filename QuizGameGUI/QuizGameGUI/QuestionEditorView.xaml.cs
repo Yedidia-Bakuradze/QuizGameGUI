@@ -28,7 +28,7 @@ namespace QuizGameGUI
             InitializeComponent();
 
             Username = username;
-            quiz = new Quiz("default");
+            quiz = new Quiz("default",0,username);
 
             //Writes down on which question we are:
             ShowCount();
@@ -55,6 +55,7 @@ namespace QuizGameGUI
         //Lets the user to continues only when all the fields are full:
         private void TextboxValueChanged(object sender, TextChangedEventArgs e)
         {
+            //Set the submit button to be available if all the fields are full:
             if (!string.IsNullOrEmpty(quizTheme.Text) && !string.IsNullOrEmpty(theQuestionFiled.Text) && !string.IsNullOrEmpty(fAns1Field.Text) && !string.IsNullOrEmpty(fAns2Field.Text) && !string.IsNullOrEmpty(fAns3Field.Text)
                 && !string.IsNullOrEmpty(tAnsField.Text)) { nextQuestionButton.IsEnabled = true; quizDoneButton.IsEnabled = true; }
             else { nextQuestionButton.IsEnabled = false; quizDoneButton.IsEnabled = false; }
@@ -62,9 +63,18 @@ namespace QuizGameGUI
 
         private void QuizDone(object sender, RoutedEventArgs e)
         {
+            //Adds the last question to the quiz:
             quiz.QuizQuestions.Add(new Question(theQuestionFiled.Text, fAns1Field.Text, fAns2Field.Text, fAns3Field.Text, tAnsField.Text, Username));
+            //Updates the category:
             quiz.Category = quizTheme.Text;
+            //Updates the number of question:
+            quiz.NumOfQuestions = questionCount;
 
+            //Adding the quiz to the global quiz list:
+            UserManager.ListOfQuizzes.Add(quiz);
+
+
+            //Sum up message:
             MessageBox.Show($"Theme: {quiz.Category}\nYou've successful added {questionCount} questions.");
 
             //Identifying the user and adding the quiz to its database of quizzes:

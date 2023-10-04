@@ -59,3 +59,5 @@ C:\Users\meirc\Desktop\Repos\TeamProject\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj
 C:\Users\meirc\Desktop\Repos\TeamProject\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.csproj.CoreCompileInputs.cache
 C:\Users\meirc\Desktop\Repos\TeamProject\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.exe
 C:\Users\meirc\Desktop\Repos\TeamProject\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.pdb
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\PlayView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\PlayView.baml

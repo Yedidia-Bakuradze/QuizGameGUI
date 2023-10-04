@@ -24,7 +24,7 @@ namespace QuizGameGUI
         {
             InitializeComponent();
             Window windows = Window.GetWindow(this);
-            windows.Content = new LobbyView();
+            windows.Content = new PlayView("admin");
         }
     }
 }
