@@ -42,9 +42,10 @@ namespace QuizGameGUI
             window.Content = new QuestionEditorView(username);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void StartQuiz(object sender, RoutedEventArgs e)
         {
-
+            Window window = Window.GetWindow(this);
+            window.Content = new PlayView(username);
         }
     }
 }

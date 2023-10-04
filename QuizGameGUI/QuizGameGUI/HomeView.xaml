@@ -46,7 +46,7 @@
             Content="Logout" Margin="0,0,20,0" Click="Logout"/>
         
         <!--Play and Create Buttons:-->
-        <Button Grid.Column="1" Grid.Row="2" Content="Start to play" Background="{x:Null}" FontSize="24" Foreground="#FF212DF1" FontWeight="Bold" FontFamily="Arial Black" Click="Button_Click"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Start to play" Background="{x:Null}" FontSize="24" Foreground="#FF212DF1" FontWeight="Bold" FontFamily="Arial Black" Click="StartQuiz"/>
         <Button Grid.Column="1" Grid.Row="4" Content="Create a Quiz" Click="CreateQuiz" Background="{x:Null}" FontSize="24" FontWeight="Bold" Foreground="#FF212DF1" FontFamily="Arial Black"/>
     </Grid>
 </UserControl>
