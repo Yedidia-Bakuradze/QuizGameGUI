@@ -26,6 +26,7 @@ namespace QuizGameGUI
             InitializeComponent();
             username = user;
             userTitle.Content = $"Hello {username}";
+            ViewControl.Content = new DiscoverView(username);
         }
 
         //Logging out from the account:
@@ -44,7 +45,7 @@ namespace QuizGameGUI
         //Redirects the user to play a quiz:
         private void StartQuiz(object sender, RoutedEventArgs e)
         {
-            ViewControl.Content = new PlayView(username);
+            ViewControl.Content = new DiscoverView(username);
         }
 
         private void ShowLeaderboard(object sender, RoutedEventArgs e)

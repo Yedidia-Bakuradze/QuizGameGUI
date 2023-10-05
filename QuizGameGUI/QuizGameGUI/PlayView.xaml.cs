@@ -19,14 +19,14 @@ namespace QuizGameGUI
     /// <summary>
     /// Interaction logic for PlayView.xaml
     /// </summary>
-    public partial class PlayView : UserControl
+    public partial class QuickPlayView : UserControl
     {
         Quiz quiz;
         int numOfQuestion,questionCount = 0,numOfRightQuestions=0;
         Question question;
         User currentUser;
         List<Button> buttons;
-        public PlayView(string username)
+        public QuickPlayView(string username)
         {
             InitializeComponent();
             //Accessing the user from the database:

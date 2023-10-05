@@ -100,3 +100,5 @@ C:\Users\meirc\Desktop\Repos\משחק ידידיה ושמואל\QuizGameGUI\Quiz
 C:\Users\meirc\Desktop\Repos\משחק ידידיה ושמואל\QuizGameGUI\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.csproj.CoreCompileInputs.cache
 >>>>>>> origin/main
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\ButtonRoundingStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\DiscoverView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\DiscoverView.baml

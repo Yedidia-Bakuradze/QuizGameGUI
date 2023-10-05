@@ -13,13 +13,13 @@
                               HorizontalAlignment="Stretch"
                               Background="{TemplateBinding Background}">
                             <TextBlock Text="{TemplateBinding Content}"
-                                       VerticalAlignment="Center"/>
+                                       VerticalAlignment="Center" Margin="10,0,0,0"/>
                         </Grid>
                     
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            
+            <Setter Property="Margin" Value="0,20,0,0"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style.Setters>
