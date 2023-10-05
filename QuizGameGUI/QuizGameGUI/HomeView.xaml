@@ -22,10 +22,13 @@
             <!--Play, Create and Leaderboard buttons:-->
             <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
                 <RadioButton FontSize="24" Content="Start to play" Foreground="White" 
-                         Style="{StaticResource NavegationButtonsStyle}" Click="StartQuiz"
+                             Style="{StaticResource NavegationButtonsStyle}" Click="StartQuiz"
                              Margin="10,20,0,0"/>
                 <RadioButton FontSize="24" Content="Create a Quiz" Foreground="White"
-                         Style="{StaticResource NavegationButtonsStyle}" Click="CreateQuiz"
+                             Style="{StaticResource NavegationButtonsStyle}" Click="CreateQuiz"
+                             Margin="10,20,0,0"/>
+                <RadioButton FontSize="24" Content="Leader Board" Foreground="White"
+                             Style="{StaticResource NavegationButtonsStyle}" Click="ShowLeaderboard"
                              Margin="10,20,0,0"/>
             </StackPanel>
 
@@ -43,7 +46,7 @@
                     Height="30" Width="75" Content="Logout" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
             <!--View Control:-->
-            <ContentControl x:Name="ViewControl" Grid.Row="1" Grid.Column="1"/>
+            <ContentControl x:Name="ViewControl" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"/>
 
         </Grid>
     </Border>

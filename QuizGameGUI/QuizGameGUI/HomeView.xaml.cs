@@ -47,9 +47,9 @@ namespace QuizGameGUI
             ViewControl.Content = new PlayView(username);
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        private void ShowLeaderboard(object sender, RoutedEventArgs e)
         {
-
+            ViewControl.Content = new LeaderboardView();
         }
     }
 }
