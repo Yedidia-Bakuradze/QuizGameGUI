@@ -20,7 +20,8 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
-
+            
+            <!--Main title:-->
             <Label FontSize="24" FontWeight="Bold" 
                    FontFamily="Arial" Grid.Column="1"
                    Grid.Row="0" Content="Quiz Game - GUI Version" 
@@ -30,7 +31,8 @@
                    Background="{x:Null}" 
                    Foreground="White" Width="338" 
                    Grid.ColumnSpan="3"/>
-        
+            
+            <!--The navbar:-->
             <StackPanel Grid.Row="1" Grid.Column="0" >
                 <RadioButton Content="Sign In" Click="Signup" 
                         FontFamily="Arial" FontSize="26" 
@@ -43,17 +45,19 @@
                              Margin="10,20,0,0"/>
             </StackPanel>
 
-
+            <!--BH label:-->
             <Label Content="B.H" HorizontalAlignment="Left" 
                    Margin="5,0,0,0" VerticalAlignment="Top" 
                    Foreground="White" RenderTransformOrigin="-29.875,2.87"
                    Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="18"/>
-
-            <ContentControl x:Name="Lobby" Grid.Row="1" Grid.Column="1"/>
+            
+            <!--//The views' stage:-->
+            <ContentControl x:Name="Lobby" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"/>
             
             <!--Exit the program button:-->
             <Button Grid.Column="0" Grid.Row="2" Style="{StaticResource ButtonRoundingStyle}"
-                    Content="Exit" Click="ExitApp"/>
+                    Content="Exit" Click="ExitApp" VerticalAlignment="Center" HorizontalAlignment="Center"
+                    Height="40" Width="100"/>
         </Grid>
     </Border>
 

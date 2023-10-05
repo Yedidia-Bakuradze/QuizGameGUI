@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="525" d:DesignWidth="720">
     <Grid Background="#FF252737">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -28,7 +28,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="questionCounterField" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10" Content="Question Number: " FontSize="24" Foreground="White"/>
+        <Label x:Name="questionCounterField" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Margin="0,0,0,15" Content="Question Number: " FontSize="24" Foreground="White"/>
         
         <!--Question's Field-->
         <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?"

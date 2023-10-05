@@ -9,8 +9,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             CornerRadius="5">
-                        <ContentPresenter Content="{TemplateBinding Content}" Width="{TemplateBinding Width}"
-                                          Height="{TemplateBinding Height}"
+                        <ContentPresenter Content="{TemplateBinding Content}"
                                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
