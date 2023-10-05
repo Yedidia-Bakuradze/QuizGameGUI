@@ -99,6 +99,7 @@ namespace QuizGameGUI
                 
                 //Setting up the first question:
                 question = quiz.QuizQuestions[questionCount];
+                questionTitle.Content = question.Title;
 
                 //Creating a backup list of the optional answers:
                 List<string> answer = question.ListOfAnswers;
