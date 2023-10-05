@@ -83,6 +83,10 @@
     </Compile>
     <Compile Include="User.cs" />
     <Compile Include="UserManager.cs" />
+    <Page Include="ButtonRoundingStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

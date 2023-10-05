@@ -6,10 +6,7 @@
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/imageForLobby.jpg"/>
-        </Grid.Background>
+    <Grid Background="#FF252737">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -25,7 +22,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--Forms' Labels:-->    
+        <!--Forms' Labels:-->
         <Label Content="Full Name:" Grid.Column="1" Grid.Row="0"
                VerticalAlignment="Bottom" HorizontalAlignment="Left" Background="{x:Null}"
                FontFamily="Arial" Foreground="White" FontSize="16"/>
@@ -35,20 +32,25 @@
         <Label Content="Password:" Grid.Column="1" Grid.Row="4" 
                VerticalAlignment="Bottom" HorizontalAlignment="Left" FontFamily="Arial"
                Foreground="White" FontSize="16"/>
-        
+
         <!--The Forms:-->
         <TextBox x:Name="nameField" Grid.Column="1" Grid.Row="1"
-                 TextChanged="TextboxValueChanged" FontSize="24" VerticalContentAlignment="Center"
-                 Background="#FFFCAAFF"/>
+                 TextChanged="TextboxValueChanged" FontSize="24" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB9B4C7"/>
+                    <GradientStop Color="#FFB9B4C7" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
         <TextBox x:Name="usernameField" Grid.Column="1" Grid.Row="3"
-                 TextChanged="TextboxValueChanged" FontSize="24" VerticalContentAlignment="Center"
-                 Background="#FFFCAAFF"/>
+                 TextChanged="TextboxValueChanged" FontSize="24" VerticalContentAlignment="Center" Background="#FFB9B4C7"/>
         <TextBox x:Name="passwordField" Grid.Column="1" Grid.Row="5"
                  TextChanged="TextboxValueChanged" FontFamily="Arial" FontSize="24" VerticalContentAlignment="Center"
-                 Background="#FFFCAAFF"/>
+                 Background="#FFB9B4C7"/>
 
         <Button x:Name="submitButton" Grid.Column="1" IsEnabled="False" Grid.Row="6"
-                Margin="0,10,0,0" Width="100" VerticalAlignment="Top" HorizontalAlignment="Center"
+                Margin="0,20,0,0" Width="100" VerticalAlignment="Top" HorizontalAlignment="Center"
                 Content="Submit" Click="SubmitSignup" Background="#FF16AFFB"/>
 
         <!--The user redirection if account exists:-->
@@ -56,16 +58,9 @@
             <Label x:Name="errorMessage" Content="User already exists" Foreground="Red"/>
             <Button Content="Login Here" Margin="10,0,0,0" Click="Login"/>
         </StackPanel>
-        
+
         <!--Baruch HaShem label because after all we are Chasidish boys:-->
-        <Label Content="B.H" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="-29.875,2.87">
-            <Label.Style>
-                <Style/>
-            </Label.Style>
-            <Label.Background>
-                <ImageBrush/>
-            </Label.Background>
-        </Label>
         
+
     </Grid>
 </UserControl>

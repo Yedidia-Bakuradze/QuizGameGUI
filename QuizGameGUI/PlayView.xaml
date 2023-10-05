@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="QuizGameGUI.PlayView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuizGameGUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="185"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        
+        <!--Upper navbar:-->
+        <Label x:Name="questionCountLable" Content="Question x out of y" Margin="10" FontSize="12"
+               VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="creatorUsername" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+               Content="Creator: Unlnow" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12"/>
+        <Label x:Name="rightQuestionsCounter" Content="DemoDemo" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"
+               VerticalContentAlignment="Top" HorizontalAlignment="Center" Margin="0,50,0,0"/>
+        
+        <Button Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right"
+                Height="28" Width="68" Content="Exit" VerticalAlignment="Top" Margin="0,10,10,0" Click="ExitButtonClick"/>
+        
+        <!--Q&A field:-->
+
+        <Label x:Name="questionTitle" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="The Question"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="24"/>
+        <Button x:Name="btn1" Grid.Row="1" Grid.Column="1" Margin="0,0,5,0" Click="UsersAnswer"/>
+        <Button x:Name="btn2" Grid.Row="1" Grid.Column="2" Margin="5,0,0,0" Click="UsersAnswer"/>
+        <Button x:Name="btn3" Grid.Row="3" Grid.Column="1" Margin="0,0,5,0" Click="UsersAnswer"/>
+        <Button x:Name="btn4" Grid.Row="3" Grid.Column="2" Margin="5,0,0,0" Click="UsersAnswer"/>
+
+        <Button x:Name="submitAnswerButton" IsEnabled="False" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"
+                VerticalAlignment="Top" HorizontalAlignment="Center" Width="100" Height="40"
+                Margin="0,10,0,0" Content="Next Question" Click="NextQuestionButtonClicked"/>
+
+
+    </Grid>
+</UserControl>

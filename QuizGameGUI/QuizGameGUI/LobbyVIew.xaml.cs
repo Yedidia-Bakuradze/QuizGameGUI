@@ -23,17 +23,18 @@ namespace QuizGameGUI
         public LobbyView()
         {
             InitializeComponent();
+            Lobby.Content = new LoginView();
         }
         private void Signup(object sender, RoutedEventArgs e)
         {
-            Window window = Window.GetWindow(this);
-            window.Content = new SignupView();
+            Lobby.Content = new SignupView();
         }
 
         private void Login(object sender, RoutedEventArgs e)
         {
-            Window windows = Window.GetWindow(this);
-            windows.Content = new LoginView();
+            Lobby.Content = new LoginView();
         }
+
+
     }
 }

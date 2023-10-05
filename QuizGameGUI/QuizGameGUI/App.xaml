@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="NavegationButtonsStyle.xaml"/>
                 <ResourceDictionary Source="SearchbarStyle.xaml"/>
+                <ResourceDictionary Source="ButtonRoundingStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
