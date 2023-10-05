@@ -25,16 +25,23 @@ namespace QuizGameGUI
             InitializeComponent();
             Lobby.Content = new LoginView();
         }
+
+        //Redirect pops up in the ContentControl the Registration form:
         private void Signup(object sender, RoutedEventArgs e)
         {
             Lobby.Content = new SignupView();
         }
 
+        //Redirect pops up in the ContentControl the Login form:
         private void Login(object sender, RoutedEventArgs e)
         {
             Lobby.Content = new LoginView();
         }
 
-
+        //Exits the app:
+        private void ExitApp(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }

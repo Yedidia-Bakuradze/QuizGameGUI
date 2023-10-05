@@ -5,9 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="920"
-             
-             >
+             d:DesignHeight="600" d:DesignWidth="920">
              
     <Border Background="#FF252737" 
             CornerRadius="20">
@@ -20,6 +18,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="75"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
 
             <Label FontSize="24" FontWeight="Bold" 
@@ -48,18 +47,13 @@
             <Label Content="B.H" HorizontalAlignment="Left" 
                    Margin="5,0,0,0" VerticalAlignment="Top" 
                    Foreground="White" RenderTransformOrigin="-29.875,2.87"
-                   Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="18">
-                <Label.Style>
-                    <Style/>
-                </Label.Style>
-                <Label.Background>
-                    <ImageBrush/>
-                </Label.Background>
-            </Label>
+                   Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="18"/>
 
-            <ContentControl x:Name="Lobby"  Grid.Row="1" Grid.Column="1"/>
-
-
+            <ContentControl x:Name="Lobby" Grid.Row="1" Grid.Column="1"/>
+            
+            <!--Exit the program button:-->
+            <Button Grid.Column="0" Grid.Row="2" Style="{StaticResource ButtonRoundingStyle}"
+                    Content="Exit" Click="ExitApp"/>
         </Grid>
     </Border>
 
