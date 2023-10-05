@@ -5,46 +5,61 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/imageForLobby.jpg"/>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="10"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="10"/>
-        </Grid.RowDefinitions>
+             d:DesignHeight="600" d:DesignWidth="920"
+             
+             >
+             
+    <Border Background="#FF252737" 
+            CornerRadius="20">
+        <Grid>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <Label FontSize="24" FontWeight="Bold" FontFamily="Arial" Grid.Column="1" Grid.Row="1" Content="Quiz Game - GUI Version" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="234,110,0,0" Background="{x:Null}" Foreground="White" Width="338" Grid.ColumnSpan="3"/>
-        <Button Grid.Column="2" Grid.Row="2" Content="Sign In" Click="Signup" FontFamily="Arial" FontSize="20" Foreground="White" Cursor="Arrow">
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
-        </Button>
-        <Button Grid.Column="2" Grid.Row="4" Content="Login" Click="Login" FontFamily="Arial" FontSize="20" Foreground="White" Margin="0,0,0,0">
-            <Button.Background>
-                <ImageBrush Stretch="Fill"/>
-            </Button.Background>
-        </Button>
-        <Label Content="B.H" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="-29.875,2.87" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <Label.Style>
-                <Style/>
-            </Label.Style>
-            <Label.Background>
-                <ImageBrush/>
-            </Label.Background>
-        </Label>
-    </Grid>
+            <Label FontSize="24" FontWeight="Bold" 
+                   FontFamily="Arial" Grid.Column="1"
+                   Grid.Row="0" Content="Quiz Game - GUI Version" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Margin="10,20,0,0"
+                   Background="{x:Null}" 
+                   Foreground="White" Width="338" 
+                   Grid.ColumnSpan="3"/>
+        
+            <StackPanel Grid.Row="1" Grid.Column="0" >
+                <RadioButton  Content="Sign In" Click="Signup" 
+                        FontFamily="Arial" FontSize="26" 
+                        Foreground="White" Cursor="Arrow" Margin="40,30,0,0" />
+
+                <RadioButton Content="Login"
+                        Click="Login" FontFamily="Arial" FontSize="26" 
+                        Foreground="White" Margin="40,30,0,0"/>
+            </StackPanel>
+
+
+            <Label Content="B.H" HorizontalAlignment="Left" 
+                   Margin="5,0,0,0" VerticalAlignment="Top" 
+                   Foreground="White" RenderTransformOrigin="-29.875,2.87"
+                   Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="18">
+                <Label.Style>
+                    <Style/>
+                </Label.Style>
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+
+            <ContentControl x:Name="Lobby"  Grid.Row="1" Grid.Column="1"/>
+
+
+        </Grid>
+    </Border>
+
+   
 </UserControl>
