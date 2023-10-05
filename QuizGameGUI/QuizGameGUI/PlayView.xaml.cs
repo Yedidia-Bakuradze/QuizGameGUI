@@ -32,8 +32,11 @@ namespace QuizGameGUI
             //Accessing the user from the database:
             currentUser = UserManager.ListOfUsers.First(user => user.Username == username);
 
-            //Getting a random quiz from our database
-            quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
+            //Getting a random quiz from our database - Different user then the player:
+            do {
+                quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
+            } while (quiz.Creator == username) ;
+            
             creatorUsername.Content = $"Made by: {quiz.Creator}";
             
             //Getting the number of question in the current quiz:
@@ -64,8 +67,7 @@ namespace QuizGameGUI
             if(button.Content as string == question.Tans)
             {
                 currentUser.Score++;
-                numOfRightQuestions++;
-                rightQuestionsCounter.Content = $"{numOfRightQuestions} / {numOfQuestion} Were right.";
+                rightQuestionsCounter.Content = $"{++numOfRightQuestions} / {numOfQuestion} Were right.";
                 button.Background = new SolidColorBrush(Colors.Green);
             }
             else
@@ -91,7 +93,8 @@ namespace QuizGameGUI
             {
                 button.Background = new SolidColorBrush(Colors.LightGray);
             }
-
+            
+            //If there is any more questions left - Continue with the game:
             if (numOfQuestion > questionCount)
             {
                 //Updating the question counter message:
@@ -123,7 +126,7 @@ namespace QuizGameGUI
         //A message that would display before the user returns to the home screen:
         private void ExitQuizMessage()
         {
-            MessageBox.Show($"You've Finished The Quiz\nYou've answered {numOfRightQuestions} questions right.");
+            MessageBox.Show($"You've Finished The Quiz\nYou've answered {numOfRightQuestions} out of {numOfQuestion} questions right.");
             Window window = Window.GetWindow(this);
             window.Content = new HomeView(currentUser.Username);
         }

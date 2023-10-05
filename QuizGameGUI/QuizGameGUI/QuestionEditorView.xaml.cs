@@ -28,7 +28,7 @@ namespace QuizGameGUI
             InitializeComponent();
 
             Username = username;
-            quiz = new Quiz("default",0,username);
+            quiz = new Quiz("default",username);
 
             //Writes down on which question we are:
             ShowCount();
