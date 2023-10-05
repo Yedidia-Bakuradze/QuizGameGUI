@@ -29,11 +29,11 @@
         
         <!--Insert Fields:-->
         <TextBox x:Name="usernameField" Grid.Column="1" Grid.Row="1"
-                 FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#B9B4C7"/>
+                 FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#FF353340" Foreground="White"/>
         <TextBox x:Name="passwordField" Grid.Column="1" Grid.Row="3"
-                 FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#B9B4C7"/>
+                 FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#FF353340" Foreground="White"/>
         <Button x:Name="submitButton" Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center" Width="100"
-            Margin="0,10,0,0" Content="Submit" Click="UserLogin" Background="#FAF0E6"/>
+            Margin="0,20,0,0" Content="Submit" Click="UserLogin" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="14"/>
         
         <!--Error Type: Wrong Password:-->
         <Label x:Name="errorMessage" Visibility="Hidden" Grid.Column="1" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center"

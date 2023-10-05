@@ -6,10 +6,7 @@
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/qustion editor pic2.png"/>
-        </Grid.Background>
+    <Grid Background="#FF252737">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="240"/>
@@ -31,51 +28,51 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="questionCounterField" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10" Content="Question Number: " FontSize="24"/>
+        <Label x:Name="questionCounterField" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10" Content="Question Number: " FontSize="24" Foreground="White"/>
         
         <!--Question's Field-->
         <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?"
                HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"
-               FontSize="14" FontFamily="Arial Black" Margin="0,0,0,40"/>
+               FontSize="14" FontFamily="Arial Black" Margin="0,0,0,40" Foreground="White"/>
         <TextBox x:Name="theQuestionFiled" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
                  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"
                  HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
-                 FontSize="24" Width="300" Height="40" TextChanged="TextboxValueChanged"/>
+                 FontSize="24" Width="300" Height="40" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
         
         <!--Answers' Field:-->
         
         <!--User's directions:-->
         <Label Grid.Row="1" Grid.Column="1" Content="Enter the Theme Of The Quiz:"   
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
         <Label Grid.Row="3" Grid.Column="1" Content="Enter Your first wrong answer:" 
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
         <Label Grid.Row="5" Grid.Column="1" Content="Enter Your second wrong answer:"
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
         <Label Grid.Row="7" Grid.Column="1" Content="Enter Your third wrong answer:" 
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
         <Label Grid.Row="9" Grid.Column="1" Content="Enter Your only ture answer:"   
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black"/>
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
         
         <!--User's Insert Field-->
         <TextBox x:Name="quizTheme" Grid.Row="1" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
+                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
         <TextBox x:Name="fAns1Field" Grid.Row="3" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
+                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Background="#FF353340" Foreground="White"/>
         <TextBox x:Name="fAns2Field" Grid.Row="5" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
+                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Background="#FF353340" Foreground="White"/>
         <TextBox x:Name="fAns3Field" Grid.Row="7" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
+                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
         <TextBox x:Name="tAnsField" Grid.Row="9" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged"/>
+                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
         
         <!--Submit Button (Available only when all the fields are full):-->
-        <Button x:Name="quizDoneButton" IsEnabled="False" Grid.Column="2"  Grid.Row="10"
+        <Button x:Name="quizDoneButton" Grid.Column="2"  Grid.Row="10"
             HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-            Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone"/>
+            Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone" Background="{x:Null}" Foreground="White" FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}"/>
         
-        <Button x:Name="nextQuestionButton" IsEnabled="False" Grid.Column="1" Grid.Row="10"
+        <Button x:Name="nextQuestionButton" Grid.Column="1" Grid.Row="10"
                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-                Content="Add Another Question" Width="250" Height="30" Click="AddQuestion"/>
+                Content="Add Another Question" Width="250" Height="30" Click="AddQuestion" Foreground="White" Background="{x:Null}" FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}"/>
         
 
     </Grid>
