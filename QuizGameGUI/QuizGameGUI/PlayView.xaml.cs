@@ -31,9 +31,9 @@ namespace QuizGameGUI
             InitializeComponent();
             //Accessing the user from the database:
             currentUser = UserManager.ListOfUsers.First(user => user.Username == username);
-
             //Getting a random quiz from our database - Different user then the player:
-            do {
+            do
+            {
                 quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
             } while (quiz.Creator == username) ;
             
@@ -67,7 +67,7 @@ namespace QuizGameGUI
             if(button.Content as string == question.Tans)
             {
                 currentUser.Score++;
-                rightQuestionsCounter.Content = $"{++numOfRightQuestions} / {numOfQuestion} Were right.";
+                numOfRightQuestions++;
                 button.Background = new SolidColorBrush(Colors.Green);
             }
             else
@@ -86,6 +86,7 @@ namespace QuizGameGUI
         //This method generates the next questions:
         private void QuestionGenerator()
         {
+            rightQuestionsCounter.Content = $"{numOfRightQuestions} / {numOfQuestion} Were right.";
             submitAnswerButton.Content = (numOfQuestion - questionCount == 1) ? "Finish The Quiz" : "Next Question";
             submitAnswerButton.IsEnabled = false;
             //Setting the colors of the buttons to grey:
