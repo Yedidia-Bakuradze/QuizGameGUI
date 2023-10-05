@@ -5,48 +5,40 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="600" d:DesignWidth="920">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/imageForLeaderboard.png"/>
-        </Grid.Background>
-        <!--<Grid.Background>
-            <ImageBrush ImageSource="/flash_821181_card.png"/>
-        </Grid.Background>-->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="75"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
-        <!--Communistical Image:-->
-        <Rectangle Grid.Column="0" Grid.Row="0" Margin="10,0,0,0" HorizontalAlignment="Left" Width="50">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/imageForIcon.jpg"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        
+        <!--Play, Create and Leaderboard buttons:-->
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <RadioButton Margin="20,30,0,0" FontSize="20" Content="Start to play" 
+                         Style="{StaticResource NavegationButtonsStyle}" Click="StartQuiz"/>
+            <RadioButton Margin="20,30,0,0" FontSize="24" Content="Create a Quiz" 
+                         Style="{StaticResource NavegationButtonsStyle}" Click="CreateQuiz"/>
+        </StackPanel>
+
+        <TextBox Width="200" Height="40" FontSize="24"
+                 VerticalAlignment="Center" HorizontalAlignment="Left" VerticalContentAlignment="Center"
+                 Style="{StaticResource SearchBarStyle}" Margin="5" Grid.Column="1"/>
+
         <!--Welcome Message:-->
-        <Label x:Name="userTitle" Margin="70,0,0,0" Grid.Column="0" Grid.Row="0" Content="Hello User"
-           VerticalAlignment="Center" FontSize="24" Foreground="#FFF15811" FontWeight="Bold"/>
-        <Label Margin="60,10,0,0" Grid.Column="1" Content="Main Menu"
-               FontSize="26" Foreground="Blue" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="userTitle" Content="User" FontSize="24" VerticalAlignment="Center"
+               Margin="25,0,0,0"/>
         
         <!--Logout Button:-->
-        <Button Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"
+        <Button Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
             Content="Logout" Margin="0,0,20,0" Click="Logout"/>
         
-        <!--Play and Create Buttons:-->
-        <Button Grid.Column="1" Grid.Row="2" Content="Start to play" Background="{x:Null}" FontSize="24" Foreground="#FF212DF1" FontWeight="Bold" FontFamily="Arial Black" Click="StartQuiz"/>
-        <Button Grid.Column="1" Grid.Row="4" Content="Create a Quiz" Click="CreateQuiz" Background="{x:Null}" FontSize="24" FontWeight="Bold" Foreground="#FF212DF1" FontFamily="Arial Black"/>
+        <!--View Control:-->
+        <ContentControl x:Name="ViewControl" Grid.Row="1" Grid.Column="1"/>
+
     </Grid>
 </UserControl>

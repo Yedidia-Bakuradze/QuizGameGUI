@@ -38,15 +38,18 @@ namespace QuizGameGUI
         //Redirects the user to the quiz creation view:
         private void CreateQuiz(object sender, RoutedEventArgs e)
         {
-            Window window = Window.GetWindow(this);
-            window.Content = new QuestionEditorView(username);
+            ViewControl.Content = new QuestionEditorView(username);
         }
 
         //Redirects the user to play a quiz:
         private void StartQuiz(object sender, RoutedEventArgs e)
         {
-            Window window = Window.GetWindow(this);
-            window.Content = new PlayView(username);
+            ViewControl.Content = new PlayView(username);
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

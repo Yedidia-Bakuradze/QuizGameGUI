@@ -111,6 +111,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NavegationButtonsStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PasswordResetView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +124,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="QuestionEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchbarStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,23 +162,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Photo\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imageForLobby.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imageForLeaderboard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imageForIcon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="qustion editor pic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="qustion editor pic2.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
