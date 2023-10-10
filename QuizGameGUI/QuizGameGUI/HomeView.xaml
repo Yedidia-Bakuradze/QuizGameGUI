@@ -41,7 +41,7 @@
             <Button Grid.Column="0" Grid.Row="2" Click="Logout"
                     Style="{StaticResource ButtonRoundingStyle}"
                     Height="40" Width="100" Content="Logout"
-                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" Foreground="White" FontSize="24" FontWeight="Bold"/>
 
             <!--View Control:-->
             <ContentControl x:Name="ViewControl" Grid.Row="1" Grid.RowSpan="2"
