@@ -26,6 +26,7 @@ namespace QuizGameGUI
         Question question;
         User currentUser;
         List<Button> buttons;
+        bool isAnswered;
         public QuickPlayView(string username)
         {
             InitializeComponent();
@@ -61,31 +62,43 @@ namespace QuizGameGUI
 
         private void UsersAnswer(object sender, RoutedEventArgs e)
         {
-            //Getting the button's name that called this method:
-            Button button = sender as Button;
-            //Checking rather the user was right - Changing colors:
-            if(button.Content as string == question.Tans)
+            //Let the user choose once only:
+            if (!isAnswered)
             {
-                currentUser.Score++;
-                numOfRightQuestions++;
-                button.Background = new SolidColorBrush(Colors.Green);
+                //Getting the button's name that called this method:
+                Button button = sender as Button;
+                //Checking rather the user was right - Changing colors:
+                if (button.Content as string == question.Tans)
+                {
+                    currentUser.Score++;
+                    numOfRightQuestions++;
+                    button.Background = new SolidColorBrush(Colors.Green);
+                }
+                else
+                {
+                    button.Background = new SolidColorBrush(Colors.Red);
+                    var rightAnsButton = buttons.First(btn => (string)btn.Content == question.Tans.ToString());
+                    rightAnsButton.Background = new SolidColorBrush(Colors.Green);
+                }
+                //Indicates that the user already choose an answer:
+                isAnswered = true;
+
+                //Enables the submit buttons' ability:
+                submitAnswerButton.IsEnabled = true;
+                
+                //Moving foreword with the question index's value:
+                questionCount++;
             }
             else
             {
-                button.Background= new SolidColorBrush(Colors.Red);
-                var rightAnsButton = buttons.First(btn => (string) btn.Content == question.Tans.ToString());
-                rightAnsButton.Background = new SolidColorBrush(Colors.Green);
-            }
-
-            //Enables the submit buttons' ability:
-            submitAnswerButton.IsEnabled = true;
-            //Moving foreword with the question index's value:
-            questionCount++;
+                //Since the user already answered - We wont change his choice.
+            }                
         }
 
         //This method generates the next questions:
         private void QuestionGenerator()
         {
+            isAnswered = false;
             rightQuestionsCounter.Content = $"{numOfRightQuestions} / {numOfQuestion} Were right.";
             submitAnswerButton.Content = (numOfQuestion - questionCount == 1) ? "Finish The Quiz" : "Next Question";
             submitAnswerButton.IsEnabled = false;
