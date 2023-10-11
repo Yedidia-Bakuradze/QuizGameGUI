@@ -70,11 +70,15 @@
         <!--Submit Button (Available only when all the fields are full):-->
         <Button x:Name="quizDoneButton" Grid.Column="2"  Grid.Row="10"
             HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-            Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone" Background="{x:Null}" Foreground="White" FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}"/>
+            Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone" 
+                Background="{x:Null}" Foreground="White" FontSize="14" 
+                FontWeight="Bold" BorderBrush="{x:Null}"/>
         
         <Button x:Name="nextQuestionButton" Grid.Column="1" Grid.Row="10"
                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-                Content="Add Another Question" Width="250" Height="30" Click="AddQuestion" Foreground="White" Background="{x:Null}" FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}"/>
+                Content="Add Another Question" Width="250" Height="30" 
+                Click="AddQuestion" Foreground="White" Background="{x:Null}" 
+                FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}"/>
         
 
     </Grid>

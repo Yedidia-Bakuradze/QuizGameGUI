@@ -57,7 +57,7 @@
             <!--Exit the program button:-->
             <Button Grid.Column="0" Grid.Row="2" Style="{StaticResource ButtonRoundingStyle}"
                     Content="Exit" Click="ExitApp" VerticalAlignment="Center" HorizontalAlignment="Center"
-                    Height="40" Width="100"/>
+                    Height="40" Width="100" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="18"/>
         </Grid>
     </Border>
 

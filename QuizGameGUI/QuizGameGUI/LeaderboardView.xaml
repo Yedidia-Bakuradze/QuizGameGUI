@@ -37,16 +37,16 @@
         
         <!--The Borads and Lists:-->
         <StackPanel Grid.Row="2" Grid.Column="0">
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="1" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="2" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="3" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="4" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="5" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="6" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="7" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="8" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="9" FontSize="24" Foreground="#FFC92ADA"/>
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="10" FontSize="24" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="1" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="2" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="3" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="4" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="5" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="6" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="7" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="8" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="9" FontSize="27" Foreground="#FFC92ADA"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="10" FontSize="27" Foreground="#FFC92ADA"/>
         </StackPanel>
         <!--Players' List:-->
         <ListBox x:Name="listPlayers" FontSize="24" Foreground="#FFA20707"
