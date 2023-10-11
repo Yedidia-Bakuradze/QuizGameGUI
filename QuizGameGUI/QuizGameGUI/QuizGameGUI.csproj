@@ -55,58 +55,58 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DiscoverView.xaml.cs">
+    <Compile Include="Views\DiscoverView.xaml.cs">
       <DependentUpon>DiscoverView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HomeView.xaml.cs">
+    <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LeaderboardView.xaml.cs">
+    <Compile Include="Views\LeaderboardView.xaml.cs">
       <DependentUpon>LeaderboardView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LobbyVIew.xaml.cs">
+    <Compile Include="Views\LobbyVIew.xaml.cs">
       <DependentUpon>LobbyVIew.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginView.xaml.cs">
+    <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PasswordResetView.xaml.cs">
+    <Compile Include="Views\PasswordResetView.xaml.cs">
       <DependentUpon>PasswordResetView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlayView.xaml.cs">
+    <Compile Include="Views\PlayView.xaml.cs">
       <DependentUpon>PlayView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Question.cs" />
-    <Compile Include="QuestionEditorView.xaml.cs">
+    <Compile Include="Views\QuestionEditorView.xaml.cs">
       <DependentUpon>QuestionEditorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Quiz.cs" />
-    <Compile Include="SignupView.xaml.cs">
+    <Compile Include="Views\SignupView.xaml.cs">
       <DependentUpon>SignupView.xaml</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
     <Compile Include="UserManager.cs" />
-    <Page Include="ButtonRoundingStyle.xaml">
+    <Page Include="Style Files\ButtonRoundingStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DiscoverView.xaml">
+    <Page Include="Views\DiscoverView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HomeView.xaml">
+    <Page Include="Views\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LeaderboardView.xaml">
+    <Page Include="Views\LeaderboardView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LobbyVIew.xaml">
+    <Page Include="Views\LobbyVIew.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoginView.xaml">
+    <Page Include="Views\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,27 +122,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NavegationButtonsStyle.xaml">
+    <Page Include="Style Files\NavegationButtonsStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PasswordResetView.xaml">
+    <Page Include="Views\PasswordResetView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PlayView.xaml">
+    <Page Include="Views\PlayView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="QuestionEditorView.xaml">
+    <Page Include="Views\QuestionEditorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SearchbarStyle.xaml">
+    <Page Include="Style Files\SearchbarStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SignupView.xaml">
+    <Page Include="Views\SignupView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,6 +173,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icons\edit_icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

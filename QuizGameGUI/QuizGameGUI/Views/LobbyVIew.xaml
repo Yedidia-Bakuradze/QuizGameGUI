@@ -24,7 +24,7 @@
             <!--Main title:-->
             <Label FontSize="24" FontWeight="Bold" 
                    FontFamily="Arial" Grid.Column="1"
-                   Grid.Row="0" Content="Quiz Game - GUI Version" 
+                   Grid.Row="0" Content="Quiz Game || GUI Version" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
                    Margin="10,20,0,0"
