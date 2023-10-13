@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizGameGUI.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,8 @@ namespace QuizGameGUI
             InitializeComponent();
             username = user;
             userTitle.Content = $"Hello {username}";
+
+            mainButton.IsChecked = true ;
             ViewControl.Content = new DiscoverView(username);
         }
 
@@ -51,6 +54,11 @@ namespace QuizGameGUI
         private void ShowLeaderboard(object sender, RoutedEventArgs e)
         {
             ViewControl.Content = new LeaderboardView();
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new ProfileView(username);
         }
     }
 }

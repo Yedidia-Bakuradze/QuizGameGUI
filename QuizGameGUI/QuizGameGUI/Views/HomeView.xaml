@@ -21,12 +21,14 @@
 
             <!--Play, Create and Leaderboard buttons:-->
             <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
-                <RadioButton FontSize="24" Content="Start to play" Foreground="White" 
+                <RadioButton x:Name="mainButton" FontSize="24" Content="Start to play" Foreground="White" 
                              Style="{StaticResource NavegationButtonsStyle}" Click="StartQuiz"/>
                 <RadioButton FontSize="24" Content="Create a Quiz" Foreground="White"
                              Style="{StaticResource NavegationButtonsStyle}" Click="CreateQuiz"/>
                 <RadioButton FontSize="24" Content="Leader Board" Foreground="White"
                              Style="{StaticResource NavegationButtonsStyle}" Click="ShowLeaderboard"/>
+                <RadioButton FontSize="24" Content="Settings" Foreground="White"
+                             Style="{StaticResource NavegationButtonsStyle}" Checked="RadioButton_Checked"/>
             </StackPanel>
 
             <TextBox Width="200" Height="40" FontSize="24"

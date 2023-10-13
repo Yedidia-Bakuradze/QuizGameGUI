@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="QuizGameGUI.Views.ProfileView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuizGameGUI.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="920">
+    <Border CornerRadius="10" Background="#252737">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="490"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="3">
+
+                <Border CornerRadius="10,0,0,10" Background="#232431"/>
+            </Grid>
+                
+            
+            <!--A welcome message:-->
+            <Label x:Name="welcomeMsg" Content="Hello User" Margin="10,10,0,0"
+                   FontSize="21" Foreground="#FFFFFF"/>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,40,0,0">
+                <RadioButton x:Name="mainButton" Content="General" Style="{StaticResource NavegationButtonsStyle}" Checked="GeneralClicked"/>
+                <RadioButton Content="Security" Style="{StaticResource NavegationButtonsStyle}" Checked="SecurityClicked"/>
+                <RadioButton Content="Privacy" Style="{StaticResource NavegationButtonsStyle}" Checked="PrivacyClicked"/>
+                <RadioButton Content="Liked Quizzes" Style="{StaticResource NavegationButtonsStyle}" Checked="LikedQuizzesClicked"/>
+                <RadioButton Content="Quiz Library" Style="{StaticResource NavegationButtonsStyle}" Checked="QuizLibraryClicked"/>
+            </StackPanel>
+            
+            
+            <!--Back to home button:-->
+            <Button Grid.Column="0" Grid.Row="2" Width="141" Height="34"
+                    Style="{StaticResource ButtonRoundingStyle}" Background="#FFFFFF"
+                    BorderThickness="0" Content="Back Home" VerticalAlignment="Center" HorizontalAlignment="Center" Click="BackToHomeClicked"/>
+            
+            <!--Changeable Usercontrol:-->
+            <ContentControl x:Name="ContentViewer" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3"
+                            Margin="15"/>
+        </Grid>
+    </Border>
+</UserControl>

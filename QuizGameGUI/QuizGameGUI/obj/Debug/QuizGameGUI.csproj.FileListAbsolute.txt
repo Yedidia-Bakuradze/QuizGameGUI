@@ -161,3 +161,7 @@ C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGam
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PlayView.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\QuestionEditorView.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\SignupView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileGeneralView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileGeneralView.baml

@@ -77,6 +77,12 @@
       <DependentUpon>PlayView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Question.cs" />
+    <Compile Include="Views\ProfileGeneralView.xaml.cs">
+      <DependentUpon>ProfileGeneralView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfileView.xaml.cs">
+      <DependentUpon>ProfileView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\QuestionEditorView.xaml.cs">
       <DependentUpon>QuestionEditorView.xaml</DependentUpon>
     </Compile>
@@ -131,6 +137,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PlayView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfileGeneralView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfileView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

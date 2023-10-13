@@ -23,6 +23,8 @@ namespace QuizGameGUI
         public LobbyView()
         {
             InitializeComponent();
+
+            mainButton.IsChecked = true;
             Lobby.Content = new LoginView();
         }
 

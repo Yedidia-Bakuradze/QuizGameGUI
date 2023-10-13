@@ -24,7 +24,7 @@
             <!--Main title:-->
             <Label FontSize="24" FontWeight="Bold" 
                    FontFamily="Arial" Grid.Column="1"
-                   Grid.Row="0" Content="Quiz Game || GUI Version" 
+                   Grid.Row="0" Content="Quiz Game - GUI Version" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
                    Margin="10,20,0,0"
@@ -36,13 +36,11 @@
             <StackPanel Grid.Row="1" Grid.Column="0" >
                 <RadioButton Content="Sign In" Click="Signup" 
                         FontFamily="Arial" FontSize="26" 
-                        Style="{StaticResource NavegationButtonsStyle}" Foreground="White"
-                             Margin="10,20,0,0"/>
+                        Style="{StaticResource NavegationButtonsStyle}" Foreground="White"/>
 
-                <RadioButton Content="Login"
+                <RadioButton Content="Login" x:Name="mainButton"
                         Click="Login" FontFamily="Arial" FontSize="26" 
-                        Style="{StaticResource NavegationButtonsStyle}" Foreground="White"
-                             Margin="10,20,0,0"/>
+                        Style="{StaticResource NavegationButtonsStyle}" Foreground="White"/>
             </StackPanel>
 
             <!--BH label:-->
