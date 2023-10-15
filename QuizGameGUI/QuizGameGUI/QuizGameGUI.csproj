@@ -80,6 +80,9 @@
     <Compile Include="Views\ProfileGeneralView.xaml.cs">
       <DependentUpon>ProfileGeneralView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProfileSecurityView.xaml.cs">
+      <DependentUpon>ProfileSecurityView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ProfileView.xaml.cs">
       <DependentUpon>ProfileView.xaml</DependentUpon>
     </Compile>
@@ -93,6 +96,10 @@
     <Compile Include="User.cs" />
     <Compile Include="UserManager.cs" />
     <Page Include="Style Files\ButtonRoundingStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style Files\NoHoverEffectButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ProfileGeneralView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfileSecurityView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

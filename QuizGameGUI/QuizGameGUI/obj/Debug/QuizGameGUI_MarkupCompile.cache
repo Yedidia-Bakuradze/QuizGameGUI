@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\App.xaml
-152088504112
+171541877920
 
-20581380637
+212011613023
 13-1310406943
-Style Files\ButtonRoundingStyle.xaml;Views\DiscoverView.xaml;Views\HomeView.xaml;Views\LeaderboardView.xaml;Views\LobbyVIew.xaml;Views\LoginView.xaml;MainWindow.xaml;Style Files\NavegationButtonsStyle.xaml;Views\PasswordResetView.xaml;Views\PlayView.xaml;Views\ProfileGeneralView.xaml;Views\ProfileView.xaml;Views\QuestionEditorView.xaml;Style Files\SearchbarStyle.xaml;Views\SignupView.xaml;
+Style Files\ButtonRoundingStyle.xaml;Style Files\NoHoverEffectButton.xaml;Views\DiscoverView.xaml;Views\HomeView.xaml;Views\LeaderboardView.xaml;Views\LobbyVIew.xaml;Views\LoginView.xaml;MainWindow.xaml;Style Files\NavegationButtonsStyle.xaml;Views\PasswordResetView.xaml;Views\PlayView.xaml;Views\ProfileGeneralView.xaml;Views\ProfileSecurityView.xaml;Views\ProfileView.xaml;Views\QuestionEditorView.xaml;Style Files\SearchbarStyle.xaml;Views\SignupView.xaml;
 
 False
 

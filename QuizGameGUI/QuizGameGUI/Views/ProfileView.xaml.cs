@@ -40,7 +40,7 @@ namespace QuizGameGUI.Views
 
         private void SecurityClicked(object sender, RoutedEventArgs e)
         {
-
+            ContentViewer.Content = new ProfileSecurityView(user.Username);
         }
 
         private void PrivacyClicked(object sender, RoutedEventArgs e)
