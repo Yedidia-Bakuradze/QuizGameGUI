@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizGameGUI.Views.ProfileView_Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,7 +56,7 @@ namespace QuizGameGUI.Views
 
         private void QuizLibraryClicked(object sender, RoutedEventArgs e)
         {
-
+            ContentViewer.Content = new ProfileMyQuizzesView(user.Username);
         }
 
         private void BackToHomeClicked(object sender, RoutedEventArgs e)

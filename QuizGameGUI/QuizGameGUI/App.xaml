@@ -10,6 +10,8 @@
                 <ResourceDictionary Source="./Style Files/SearchbarStyle.xaml"/>
                 <ResourceDictionary Source="./Style Files/ButtonRoundingStyle.xaml"/>
                 <ResourceDictionary Source="./Style Files/NoHoverEffectButton.xaml"/>
+                <ResourceDictionary Source="./Style Files/ListitemRoundingStyle.xaml"/>
+                <ResourceDictionary Source="./Style Files/SubmitButtonRoundingStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

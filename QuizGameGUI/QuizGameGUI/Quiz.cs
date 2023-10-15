@@ -10,6 +10,9 @@ namespace QuizGameGUI
     {
         public string Category { get; set; }
         public string Creator { get; set; }
+        
+        //A unique id for each quiz - The source value is in the UserManager class:
+        public int Id { get; set; }
         public List<Question> QuizQuestions { get; set; }
         public Quiz(string category, string creator)
         {
@@ -22,6 +25,7 @@ namespace QuizGameGUI
             };
             Category = category;
             Creator = creator;
+            Id = UserManager.QuizId++;
         }
     }
 }

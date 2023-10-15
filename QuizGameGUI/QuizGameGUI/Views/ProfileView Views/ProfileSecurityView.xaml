@@ -58,7 +58,7 @@
                             Width="21" Background="Transparent"
                             BorderThickness="0" Click="changeUsername"
                             Style="{StaticResource NoHoverButtonStyle}">
-                        <Image Source="../Icons/edit_icon.ico"/>
+                        <Image Source="../../Icons/edit_icon.ico"/>
                     </Button>
                     
                     <!--The password field:-->
@@ -71,7 +71,7 @@
                             Width="21"  Background="Transparent"
                             BorderThickness="0" Click="changePassword"
                             Style="{StaticResource NoHoverButtonStyle}">
-                        <Image Source="../Icons/edit_icon.ico"/>
+                        <Image Source="../../Icons/edit_icon.ico"/>
                     </Button>
 
                     <!--Right side:-->

@@ -64,7 +64,7 @@
                             Width="20" Background="Transparent" BorderThickness="0"
                             Click="ChangeAutoApproveFriendRequests"
                             Style="{StaticResource NoHoverButtonStyle}">
-                        <Image Source="../Icons/settings_icon.ico"/>
+                        <Image Source="../../Icons/settings_icon.ico"/>
                     </Button>
                 </Grid>
             </Border>
@@ -107,7 +107,7 @@
                             Width="20" Background="Transparent" BorderThickness="0"
                             Click="ChangeQuizPublicAppearance"
                             Style="{StaticResource NoHoverButtonStyle}">
-                        <Image Source="../Icons/settings_icon.ico"/>
+                        <Image Source="../../Icons/settings_icon.ico"/>
                     </Button>
                 </Grid>
             </Border>

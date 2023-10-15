@@ -1,0 +1,197 @@
+﻿<UserControl x:Class="QuizGameGUI.Views.ProfileView_Views.ProfileMyQuizzesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuizGameGUI.Views.ProfileView_Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="720">
+
+    <Border Background="#292C3D" CornerRadius="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="14"/>
+                <ColumnDefinition Width="215"/>
+                <ColumnDefinition Width="9"/>
+                <ColumnDefinition Width="215"/>
+                <ColumnDefinition Width="9"/>
+                <ColumnDefinition Width="215"/>
+                <ColumnDefinition Width="14"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="460"/>
+                <RowDefinition Height="15"/>
+            </Grid.RowDefinitions>
+            
+            <!--Main title:-->
+            <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+                       Text="My Quizzes" VerticalAlignment="Bottom"
+                       Foreground="#FFFFFF" FontSize="21"
+                       Margin="10,0,0,0"/>
+            
+            <!--The list of the quizzes:-->
+            <Border Grid.Column="1" Grid.Row="3"
+                    Background="#35374D" CornerRadius="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+
+                    <!--Title:-->
+                    <Label Grid.Column="0" Grid.ColumnSpan="2"
+                       Grid.Row="0"
+                       HorizontalAlignment="Center" VerticalAlignment="Top"
+                       Margin="0,8,0,0" Content="Quiz List"
+                       Foreground="#FFFFFF" FontSize="12"/>
+                    <!--List of all quizzes:-->
+                    <ListBox x:Name="listOfQuizzes" Grid.Column="0" Grid.ColumnSpan="2"
+                             Grid.Row="2"
+                             Background="Transparent" BorderThickness="0"
+                             SelectionChanged="ShowAssociatedQuestions"/>
+                </Grid>
+            </Border>
+            
+            <!--The list of questions that are associated to the selected quiz:-->
+            <Border x:Name="questionPage" Grid.Column="3" Grid.Row="3"
+                    Background="#35374D" CornerRadius="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+
+                    <!--Title:-->
+                    <Label Grid.Column="0" Grid.ColumnSpan="2"
+                          Grid.Row="0"
+                          HorizontalAlignment="Center" VerticalAlignment="Top"
+                          Margin="0,8,0,0" Content="Questions' Editor"
+                          Foreground="#FFFFFF" FontSize="12"/>
+                    <!--Header of questions count:-->
+                    <TextBlock Grid.Column="0" Grid.ColumnSpan="2"
+                               Grid.Row="0" HorizontalAlignment="Center"
+                               VerticalAlignment="Top"
+                               Margin="0,30,0,0"
+                               Foreground="#FFFFFF"
+                               FontSize="14">
+                        <Run x:Name="numOfQuestions">X</Run>
+                        <Run>Total Questions</Run>
+                    </TextBlock>
+                    <!--List of questions in the selected quiz:-->
+                    <ListBox x:Name="listOfQuestions"
+                             Grid.Column="0" Grid.ColumnSpan="2"
+                             Grid.Row="2" Background="Transparent"
+                             BorderThickness="0"
+                             SelectionChanged="ShowQuestionsValues">
+                    </ListBox>
+                </Grid>
+            </Border>
+            
+            <!--The valus of the selected question:-->
+            <Border x:Name="questionEditor" Visibility="Hidden" Grid.Column="5" Grid.Row="3"
+                    Background="#35374D" CornerRadius="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65.6"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="33"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!--Title:-->
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Top"
+                           Margin="0,8,0,0" Content="Question Editor"
+                           Foreground="#FFFFFF" FontSize="12"/>
+
+                    <!--Question's Field:-->
+                    <Label Grid.Row="1" HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom" Content="The Question:"
+                           Foreground="#FFFFFF" FontSize="10"/>
+                    <Border Grid.Row="2" Background="#FFFFFF"
+                            CornerRadius="5" Margin="5,0,5,0">
+                        <TextBox x:Name="questionField" Background="Transparent" Height="32" 
+                                 VerticalContentAlignment="Center"
+                                 FontSize="21" BorderThickness="0"/>
+                    </Border>
+
+                    <!--Answers' field:-->
+                    <Label Grid.Row="3" Content="False answer #1" VerticalAlignment="Bottom"
+                           VerticalContentAlignment="Bottom" HorizontalAlignment="Left"
+                           FontSize="12" Foreground="#FFFFFF"/>
+                    <Label Grid.Row="5" Content="False answer #2" VerticalAlignment="Bottom"
+                           VerticalContentAlignment="Bottom" HorizontalAlignment="Left"
+                           Foreground="#FFFFFF"/>
+                    <Label Grid.Row="7" Content="False answer #3" VerticalAlignment="Bottom"
+                           VerticalContentAlignment="Bottom" HorizontalAlignment="Left"
+                           FontSize="12" Foreground="#FFFFFF"/>
+                    <Label Grid.Row="9" Content="True answer" VerticalAlignment="Bottom"
+                           VerticalContentAlignment="Bottom" HorizontalAlignment="Left"
+                           FontSize="12" Foreground="#FFFFFF"/>
+                    
+                    <!--Answer Fields:-->
+                    <Border Grid.Row="4" Background="#FFFFFF"
+                            CornerRadius="5" Margin="5,0,5,0">
+                        <TextBox x:Name="fAns1Field" VerticalContentAlignment="Center"
+                                 FontSize="21" Background="Transparent" Height="32" 
+                                 BorderThickness="0"/>
+                    </Border>
+                    <Border Grid.Row="6" Background="#FFFFFF"
+                            CornerRadius="5" Margin="5,0,5,0">
+                        <TextBox x:Name="fAns2Field" Background="Transparent" Height="32" 
+                                 VerticalContentAlignment="Center"
+                                 FontSize="21" BorderThickness="0"/>
+                    </Border>
+                    <Border Grid.Row="8" Background="#FFFFFF"
+                            CornerRadius="5" Margin="5,0,5,0">
+                        <TextBox x:Name="fAns3Field" Background="Transparent" Height="32" 
+                                 VerticalContentAlignment="Center"
+                                 FontSize="21" BorderThickness="0"/>
+                    </Border>
+                    <Border Grid.Row="10" Background="#FFFFFF"
+                            CornerRadius="5" Margin="5,0,5,0">
+                        <TextBox x:Name="tAnsField" Background="Transparent" Height="32" 
+                                 VerticalContentAlignment="Center"
+                                 FontSize="21" BorderThickness="0"/>
+                    </Border>
+
+                    <!--Submit and reset buttons:-->
+                    <StackPanel Grid.Row="11" Grid.RowSpan="2" VerticalAlignment="Bottom"
+                                Margin="0,0,0,10" HorizontalAlignment="Center"
+                                Width="115">
+                        <Button Height="24" Background="#D9D9D9" BorderThickness="0"
+                                Style="{StaticResource SubmitButtonRoundingStyle}"
+                                Content="Save The Changes" Click="SaveChanges"/>
+                        <Button Height="24" Margin="0,10,0,0" Background="#FFFFFF"
+                                BorderThickness="0"
+                                Style="{StaticResource SubmitButtonRoundingStyle}"
+                                Content="Reset To Original" Click="ResetValues"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

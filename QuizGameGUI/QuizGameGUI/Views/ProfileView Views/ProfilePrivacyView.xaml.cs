@@ -31,6 +31,7 @@ namespace QuizGameGUI.Views
         private void ChangeAutoApproveFriendRequests(object sender, RoutedEventArgs e)
         {
             autoApproveFriendsState.Text = (autoApproveFriendsState.Text == "Enabled") ? "Disabled" : "Enabled";
+
         }
 
         //Changes the mode of the Quiz Public Appearance:

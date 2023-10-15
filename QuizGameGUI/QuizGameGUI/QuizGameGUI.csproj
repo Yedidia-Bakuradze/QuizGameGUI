@@ -55,13 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\DiscoverView.xaml.cs">
+    <Compile Include="Views\HomeView Views\DiscoverView.xaml.cs">
       <DependentUpon>DiscoverView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView.xaml.cs">
+    <Compile Include="Views\HomeView Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\LeaderboardView.xaml.cs">
+    <Compile Include="Views\HomeView Views\LeaderboardView.xaml.cs">
       <DependentUpon>LeaderboardView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LobbyVIew.xaml.cs">
@@ -73,23 +73,26 @@
     <Compile Include="Views\PasswordResetView.xaml.cs">
       <DependentUpon>PasswordResetView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PlayView.xaml.cs">
+    <Compile Include="Views\HomeView Views\PlayView.xaml.cs">
       <DependentUpon>PlayView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Question.cs" />
-    <Compile Include="Views\ProfileGeneralView.xaml.cs">
+    <Compile Include="Views\ProfileView Views\ProfileGeneralView.xaml.cs">
       <DependentUpon>ProfileGeneralView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ProfilePrivacyView.xaml.cs">
+    <Compile Include="Views\ProfileView Views\ProfileMyQuizzesView.xaml.cs">
+      <DependentUpon>ProfileMyQuizzesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfileView Views\ProfilePrivacyView.xaml.cs">
       <DependentUpon>ProfilePrivacyView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ProfileSecurityView.xaml.cs">
+    <Compile Include="Views\ProfileView Views\ProfileSecurityView.xaml.cs">
       <DependentUpon>ProfileSecurityView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ProfileView.xaml.cs">
+    <Compile Include="Views\ProfileView Views\ProfileView.xaml.cs">
       <DependentUpon>ProfileView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\QuestionEditorView.xaml.cs">
+    <Compile Include="Views\HomeView Views\QuestionEditorView.xaml.cs">
       <DependentUpon>QuestionEditorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Quiz.cs" />
@@ -102,19 +105,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Style Files\ListitemRoundingStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Style Files\NoHoverEffectButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\DiscoverView.xaml">
+    <Page Include="Style Files\SubmitButtonRoundingStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\HomeView.xaml">
+    <Page Include="Views\HomeView Views\DiscoverView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\LeaderboardView.xaml">
+    <Page Include="Views\HomeView Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeView Views\LeaderboardView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,27 +157,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PlayView.xaml">
+    <Page Include="Views\HomeView Views\PlayView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ProfileGeneralView.xaml">
+    <Page Include="Views\ProfileView Views\ProfileGeneralView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ProfilePrivacyView.xaml">
+    <Page Include="Views\ProfileView Views\ProfileMyQuizzesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ProfileSecurityView.xaml">
+    <Page Include="Views\ProfileView Views\ProfilePrivacyView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ProfileView.xaml">
+    <Page Include="Views\ProfileView Views\ProfileSecurityView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\QuestionEditorView.xaml">
+    <Page Include="Views\ProfileView Views\ProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeView Views\QuestionEditorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
