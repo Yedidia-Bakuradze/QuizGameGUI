@@ -45,7 +45,7 @@ namespace QuizGameGUI.Views
 
         private void PrivacyClicked(object sender, RoutedEventArgs e)
         {
-
+            ContentViewer.Content = new ProfilePrivacyView(user.Username);
         }
 
         private void LikedQuizzesClicked(object sender, RoutedEventArgs e)

@@ -80,6 +80,9 @@
     <Compile Include="Views\ProfileGeneralView.xaml.cs">
       <DependentUpon>ProfileGeneralView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProfilePrivacyView.xaml.cs">
+      <DependentUpon>ProfilePrivacyView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ProfileSecurityView.xaml.cs">
       <DependentUpon>ProfileSecurityView.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ProfilePrivacyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ProfileSecurityView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -200,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\edit_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\settings_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

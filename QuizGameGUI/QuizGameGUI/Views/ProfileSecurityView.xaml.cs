@@ -71,7 +71,7 @@ namespace QuizGameGUI.Views
         {
             submitBtn.IsEnabled = (!string.IsNullOrEmpty(newPasswordInput.Text) && !string.IsNullOrEmpty(newPasswordCheckInput.Text));
         }
-
+        
         private void SubmitChanges(object sender, RoutedEventArgs e)
         {
             //Updates the username only if the user asked for it:
@@ -104,6 +104,7 @@ namespace QuizGameGUI.Views
             }
         }
 
+        //Logs back to the HomeView 
         private void Finished()
         {
             Window.GetWindow(this).Content = new HomeView(user.Username);
