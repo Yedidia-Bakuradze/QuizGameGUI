@@ -32,31 +32,88 @@ namespace QuizGameGUI.Views
         //When pressed - The new username field appears or disappears:
         private void changeUsername(object sender, RoutedEventArgs e)
         {
-            newUsernameTitle.Visibility = newUsernameField.Visibility= (newUsernameTitle.Visibility == Visibility.Visible)? Visibility.Hidden: Visibility.Visible;
-            submitBtn.Visibility = ((newUsernameField.Visibility == Visibility.Visible) ||(newPasswordField.Visibility == Visibility.Visible))? Visibility.Visible: Visibility.Hidden;
+            if(newUsernameTitle.Visibility == Visibility.Visible)
+            {
+                newUsernameInput.Text = null;
+                newUsernameTitle.Visibility = newUsernameField.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                newUsernameTitle.Visibility = newUsernameField.Visibility = Visibility.Visible;
+            }
+            SubmitBtnStateChanger();
         }
         //When pressed - The new password field appears or disappears:
         private void changePassword(object sender, RoutedEventArgs e)
         {
-            newPasswordTitle.Visibility = newPasswordCheckTitle.Visibility = newPasswordField.Visibility =
-                newPasswordCheckField.Visibility = (newPasswordCheckField.Visibility == Visibility.Hidden)?Visibility.Visible: Visibility.Hidden;
-            submitBtn.Visibility = ((newUsernameField.Visibility == Visibility.Visible) || (newPasswordField.Visibility == Visibility.Visible)) ? Visibility.Visible : Visibility.Hidden;
+            if (newPasswordTitle.Visibility == Visibility.Visible)
+            {
+                newPasswordInput.Text = null;
+                newPasswordCheckInput.Text = null;
+                newPasswordField.Visibility = newPasswordTitle.Visibility = Visibility.Hidden;
+                newPasswordCheckField.Visibility = newPasswordCheckTitle.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                newUsernameTitle.Visibility = newUsernameField.Visibility = Visibility.Visible;
+            }
+            SubmitBtnStateChanger();
         }
 
         //Triggered when the new username field's value is changed: 
         private void usernameFieldChanged(object sender, TextChangedEventArgs e)
         {
+            submitBtn.IsEnabled = (!string.IsNullOrEmpty(newUsernameInput.Text));
         }
 
         //Triggered when the new password fields' value is changed:
         private void passwordFieldChanged(object sender, TextChangedEventArgs e)
         {
-
+            submitBtn.IsEnabled = (!string.IsNullOrEmpty(newPasswordInput.Text) && !string.IsNullOrEmpty(newPasswordCheckInput.Text));
         }
 
         private void SubmitChanges(object sender, RoutedEventArgs e)
         {
-
+            //Updates the username only if the user asked for it:
+            if(newUsernameTitle.Visibility == Visibility.Visible)
+            {
+                //If the username already exists we cant let it to be the new username: 
+                if(UserManager.ListOfUsers.Any(usr=>usr.Username == newUsernameInput.Text))
+                {
+                    errorMsg.Content = $"Sorry but the username:{newUsernameInput.Text} is already taken";
+                }
+                else
+                {
+                    user.Username = newUsernameInput.Text;
+                    Finished();
+                }
+            }
+            //Updates the password only if the user asked for it:
+            if (newPasswordField.Visibility == Visibility.Visible)
+            {
+                //The two password fields have to be the same:
+                if(newPasswordInput.Text == newPasswordCheckInput.Text)
+                {
+                    user.Password = newPasswordCheckInput.Text;
+                    Finished();
+                }
+                else
+                {
+                    errorMsg.Content = "The password fields don't match";
+                }
+            }
         }
+
+        private void Finished()
+        {
+            Window.GetWindow(this).Content = new HomeView(user.Username);
+        }
+
+        //Changes the submit button's state of appearance whether it is needed of not. 
+        private void SubmitBtnStateChanger()
+        {
+            submitBtn.Visibility = ((newUsernameField.Visibility == Visibility.Visible) || (newPasswordField.Visibility == Visibility.Visible)) ? Visibility.Visible : Visibility.Hidden;
+        }
+
     }
 }

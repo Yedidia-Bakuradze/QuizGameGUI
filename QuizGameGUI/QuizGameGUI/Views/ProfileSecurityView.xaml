@@ -83,7 +83,7 @@
 
                     <Border x:Name="newUsernameField" Visibility="Hidden" CornerRadius="5" Background="#FFFFFF" Height="21"
                             Margin="200,0,0,0" Width="150" Grid.Column="3" Grid.Row="3">
-                        <TextBox BorderThickness="0" Background="Transparent"
+                        <TextBox x:Name="newUsernameInput" BorderThickness="0" Background="Transparent"
                                  TextChanged="usernameFieldChanged"/>
                     </Border>
 
@@ -95,7 +95,7 @@
 
                     <Border Visibility="Hidden" x:Name="newPasswordField" Grid.Column="3" Grid.Row="5" Margin="200,0,0,0" Height="21"
                             Width="150" Background="#FFFFFF" CornerRadius="5">
-                        <TextBox Background="Transparent" BorderThickness="0"
+                        <TextBox x:Name="newPasswordInput" Background="Transparent" BorderThickness="0"
                                  TextChanged="passwordFieldChanged"/>
                     </Border>
 
@@ -107,7 +107,7 @@
                     </TextBlock>
                     <Border Visibility="Hidden" x:Name="newPasswordCheckField" Margin="200,0,0,0" Width="150" Grid.Column="3" Grid.Row="7"
                             Background="#FFFFFF" CornerRadius="5" Height="21">
-                        <TextBox BorderThickness="0" Background="Transparent"
+                        <TextBox x:Name="newPasswordCheckInput" BorderThickness="0" Background="Transparent"
                                  TextChanged="passwordFieldChanged"/>
                     </Border>
 
@@ -119,6 +119,8 @@
                             Background="#3FC845" Click="SubmitChanges"/>
                 </Grid>
             </Border>
+            <Label x:Name="errorMsg" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"
+                   Margin="10,0,0,0" FontSize="21" Foreground="#FF6969"/>
         </Grid>
     </Border>
 </UserControl>
