@@ -56,7 +56,7 @@
                     </TextBlock>
                     <Button Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right"
                             Width="21" Background="Transparent"
-                            BorderThickness="0" Click="changeUsername"
+                            BorderThickness="0" Click="ShowChangeUsernameField"
                             Style="{StaticResource NoHoverButtonStyle}">
                         <Image Source="../../Icons/edit_icon.ico"/>
                     </Button>
@@ -69,7 +69,7 @@
                     </TextBlock>
                     <Button Grid.Column="1" Grid.Row="5" HorizontalAlignment="Right"
                             Width="21"  Background="Transparent"
-                            BorderThickness="0" Click="changePassword"
+                            BorderThickness="0" Click="ShowChangePasswordField"
                             Style="{StaticResource NoHoverButtonStyle}">
                         <Image Source="../../Icons/edit_icon.ico"/>
                     </Button>
@@ -120,7 +120,7 @@
                 </Grid>
             </Border>
             <Label x:Name="errorMsg" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"
-                   Margin="10,0,0,0" FontSize="21" Foreground="#FF6969"/>
+                   Margin="10,0,0,0" FontSize="21" Foreground="#FF6969" Content=""/>
         </Grid>
     </Border>
 </UserControl>

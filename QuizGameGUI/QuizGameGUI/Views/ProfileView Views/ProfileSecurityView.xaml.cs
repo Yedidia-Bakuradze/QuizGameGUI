@@ -30,12 +30,11 @@ namespace QuizGameGUI.Views
         }
 
         //When pressed - The new username field appears or disappears:
-        private void changeUsername(object sender, RoutedEventArgs e)
+        private void ShowChangeUsernameField(object sender, RoutedEventArgs e)
         {
             if(newUsernameTitle.Visibility == Visibility.Visible)
             {
                 newUsernameInput.Text = null;
-                errorMsg.Content = null;
                 newUsernameTitle.Visibility = newUsernameField.Visibility = Visibility.Hidden;
             }
             else
@@ -45,13 +44,12 @@ namespace QuizGameGUI.Views
             SubmitBtnStateChanger();
         }
         //When pressed - The new password field appears or disappears:
-        private void changePassword(object sender, RoutedEventArgs e)
+        private void ShowChangePasswordField(object sender, RoutedEventArgs e)
         {
             if (newPasswordTitle.Visibility == Visibility.Visible)
             {
                 newPasswordInput.Text = null;
                 newPasswordCheckInput.Text = null;
-                errorMsg.Content = null; 
                 newPasswordField.Visibility = newPasswordTitle.Visibility = Visibility.Hidden;
                 newPasswordCheckField.Visibility = newPasswordCheckTitle.Visibility = Visibility.Hidden;
             }
@@ -78,41 +76,8 @@ namespace QuizGameGUI.Views
         private void SubmitChanges(object sender, RoutedEventArgs e)
         {
             //Updates the username only if the user asked for it:
-            if(newUsernameTitle.Visibility == Visibility.Visible)
-            {
-                //If the username already exists we cant let it to be the new username: 
-                if(newUsernameInput == null)
-                {
-                    errorMsg.Content = "Username field can't be empty";
-                }
-                else if(UserManager.ListOfUsers.Any(usr=>usr.Username == newUsernameInput.Text))
-                {
-                    errorMsg.Content = $"Sorry but the username:{newUsernameInput.Text} is already taken";
-                }
-                else
-                {
-                    user.Username = newUsernameInput.Text;
-                    Finished();
-                }
-            }
-            //Updates the password only if the user asked for it:
-            if (newPasswordField.Visibility == Visibility.Visible)
-            {
-                //The two password fields have to be the same:
-                if (newPasswordInput.Text == null || newPasswordCheckInput.Text == null)
-                {
-                    errorMsg.Content = "Password fields can't be empty";
-                }
-                else if(newPasswordInput.Text == newPasswordCheckInput.Text)
-                {
-                    user.Password = newPasswordCheckInput.Text;
-                    Finished();
-                }
-                else
-                {
-                    errorMsg.Content = "The password fields don't match";
-                }
-            }
+            if (ChangePassword() || ChangeUsername())
+                Finished();
         }
 
         //Logs back to the HomeView 
@@ -128,5 +93,42 @@ namespace QuizGameGUI.Views
         
         }
 
+        //Changes the username of the current player - and returns whether the change happened or not:
+        private bool ChangeUsername()
+        {
+            if (newUsernameField.Visibility == Visibility.Visible)
+            {
+                //No duplicate usernames:
+                if (UserManager.ListOfUsers.Any(x => x.Username == newUsernameInput.Text))
+                {
+                    errorMsg.Content = $"Sorry but the username: {newUsernameInput.Text} is been taken.";
+                    return false;
+                }
+                else
+                {
+                    user.Username = newUsernameInput.Text;
+                    return true;
+                }
+            }
+            else { return false; }
+        }
+
+        private bool ChangePassword()
+        {
+            if (newPasswordField.Visibility == Visibility.Visible)
+            {
+                if (newPasswordCheckInput.Text != newPasswordInput.Text)
+                {
+                    errorMsg.Content = "The values on both fields have to be identical.";
+                    return false;
+                }
+                else
+                {
+                    user.Password = newPasswordInput.Text;
+                    return true;
+                }
+            }
+            else { return false; }
+        }
     }
 }
