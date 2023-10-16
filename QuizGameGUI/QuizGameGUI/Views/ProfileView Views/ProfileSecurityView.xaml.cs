@@ -35,6 +35,7 @@ namespace QuizGameGUI.Views
             if(newUsernameTitle.Visibility == Visibility.Visible)
             {
                 newUsernameInput.Text = null;
+                errorMsg.Content = null;
                 newUsernameTitle.Visibility = newUsernameField.Visibility = Visibility.Hidden;
             }
             else
@@ -50,12 +51,14 @@ namespace QuizGameGUI.Views
             {
                 newPasswordInput.Text = null;
                 newPasswordCheckInput.Text = null;
+                errorMsg.Content = null; 
                 newPasswordField.Visibility = newPasswordTitle.Visibility = Visibility.Hidden;
                 newPasswordCheckField.Visibility = newPasswordCheckTitle.Visibility = Visibility.Hidden;
             }
             else
             {
-                newUsernameTitle.Visibility = newUsernameField.Visibility = Visibility.Visible;
+                newPasswordField.Visibility = newPasswordTitle.Visibility = Visibility.Visible;
+                newPasswordCheckField.Visibility = newPasswordCheckTitle.Visibility = Visibility.Visible;
             }
             SubmitBtnStateChanger();
         }
@@ -78,7 +81,11 @@ namespace QuizGameGUI.Views
             if(newUsernameTitle.Visibility == Visibility.Visible)
             {
                 //If the username already exists we cant let it to be the new username: 
-                if(UserManager.ListOfUsers.Any(usr=>usr.Username == newUsernameInput.Text))
+                if(newUsernameInput == null)
+                {
+                    errorMsg.Content = "Username field can't be empty";
+                }
+                else if(UserManager.ListOfUsers.Any(usr=>usr.Username == newUsernameInput.Text))
                 {
                     errorMsg.Content = $"Sorry but the username:{newUsernameInput.Text} is already taken";
                 }
@@ -92,7 +99,11 @@ namespace QuizGameGUI.Views
             if (newPasswordField.Visibility == Visibility.Visible)
             {
                 //The two password fields have to be the same:
-                if(newPasswordInput.Text == newPasswordCheckInput.Text)
+                if (newPasswordInput.Text == null || newPasswordCheckInput.Text == null)
+                {
+                    errorMsg.Content = "Password fields can't be empty";
+                }
+                else if(newPasswordInput.Text == newPasswordCheckInput.Text)
                 {
                     user.Password = newPasswordCheckInput.Text;
                     Finished();
@@ -114,6 +125,7 @@ namespace QuizGameGUI.Views
         private void SubmitBtnStateChanger()
         {
             submitBtn.Visibility = ((newUsernameField.Visibility == Visibility.Visible) || (newPasswordField.Visibility == Visibility.Visible)) ? Visibility.Visible : Visibility.Hidden;
+        
         }
 
     }
