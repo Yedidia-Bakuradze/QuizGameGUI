@@ -51,7 +51,7 @@ namespace QuizGameGUI.Views
 
         private void LikedQuizzesClicked(object sender, RoutedEventArgs e)
         {
-           
+           ContentViewer.Content =new ProfileMyLikedQuizzesView(user.Username);
         }
 
         private void QuizLibraryClicked(object sender, RoutedEventArgs e)

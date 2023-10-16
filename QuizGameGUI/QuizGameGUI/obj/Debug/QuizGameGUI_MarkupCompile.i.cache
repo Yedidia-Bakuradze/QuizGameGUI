@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\App.xaml
-21787506682
+22-655133000
 
-241136210558
+25-1529621716
 13-1310406943
-Style Files\ButtonRoundingStyle.xaml;Style Files\ListitemRoundingStyle.xaml;Style Files\NoHoverEffectButton.xaml;Style Files\SubmitButtonRoundingStyle.xaml;Views\HomeView Views\DiscoverView.xaml;Views\HomeView Views\HomeView.xaml;Views\HomeView Views\LeaderboardView.xaml;Views\LobbyVIew.xaml;Views\LoginView.xaml;MainWindow.xaml;Style Files\NavegationButtonsStyle.xaml;Views\PasswordResetView.xaml;Views\HomeView Views\PlayView.xaml;Views\ProfileView Views\ProfileGeneralView.xaml;Views\ProfileView Views\ProfileMyQuizzesView.xaml;Views\ProfileView Views\ProfilePrivacyView.xaml;Views\ProfileView Views\ProfileSecurityView.xaml;Views\ProfileView Views\ProfileView.xaml;Views\HomeView Views\QuestionEditorView.xaml;Style Files\SearchbarStyle.xaml;Views\SignupView.xaml;
+Style Files\ButtonRoundingStyle.xaml;Style Files\ListitemRoundingStyle.xaml;Style Files\NoHoverEffectButton.xaml;Style Files\SubmitButtonRoundingStyle.xaml;Views\HomeView Views\DiscoverView.xaml;Views\HomeView Views\HomeView.xaml;Views\HomeView Views\LeaderboardView.xaml;Views\LobbyVIew.xaml;Views\LoginView.xaml;MainWindow.xaml;Style Files\NavegationButtonsStyle.xaml;Views\PasswordResetView.xaml;Views\HomeView Views\PlayView.xaml;Views\ProfileView Views\ProfileGeneralView.xaml;Views\ProfileView Views\ProfileMyLikedQuizzesView.xaml;Views\ProfileView Views\ProfileMyQuizzesView.xaml;Views\ProfileView Views\ProfilePrivacyView.xaml;Views\ProfileView Views\ProfileSecurityView.xaml;Views\ProfileView Views\ProfileView.xaml;Views\HomeView Views\QuestionEditorView.xaml;Style Files\SearchbarStyle.xaml;Views\SignupView.xaml;
 
 True
 

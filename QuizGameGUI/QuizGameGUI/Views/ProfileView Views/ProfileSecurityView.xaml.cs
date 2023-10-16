@@ -112,7 +112,8 @@ namespace QuizGameGUI.Views
             }
             else { return false; }
         }
-
+        
+        //Changes the password of the current player - and returns whether the change happened or not:
         private bool ChangePassword()
         {
             if (newPasswordField.Visibility == Visibility.Visible)

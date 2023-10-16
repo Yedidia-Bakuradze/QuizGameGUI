@@ -80,6 +80,9 @@
     <Compile Include="Views\ProfileView Views\ProfileGeneralView.xaml.cs">
       <DependentUpon>ProfileGeneralView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProfileView Views\ProfileMyLikedQuizzesView.xaml.cs">
+      <DependentUpon>ProfileMyLikedQuizzesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ProfileView Views\ProfileMyQuizzesView.xaml.cs">
       <DependentUpon>ProfileMyQuizzesView.xaml</DependentUpon>
     </Compile>
@@ -162,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ProfileView Views\ProfileGeneralView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfileView Views\ProfileMyLikedQuizzesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

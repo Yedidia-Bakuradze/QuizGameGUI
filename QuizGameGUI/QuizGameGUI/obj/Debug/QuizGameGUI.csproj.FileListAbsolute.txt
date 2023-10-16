@@ -195,3 +195,5 @@ C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGam
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyQuizzesView.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ListitemRoundingStyle.baml
 C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\SubmitButtonRoundingStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyLikedQuizzesView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyLikedQuizzesView.baml

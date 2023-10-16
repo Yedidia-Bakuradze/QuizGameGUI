@@ -18,7 +18,9 @@ namespace QuizGameGUI
             new User("Admin","admin","admin",40),
         };
 
-        public static List<Quiz> ListOfQuizzes { get; set; } = new List<Quiz>(){};
+        public static List<Quiz> ListOfQuizzes { get; set; } = new List<Quiz>()
+        {
+        };
 
     }
 }

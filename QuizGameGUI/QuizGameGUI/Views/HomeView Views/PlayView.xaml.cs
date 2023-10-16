@@ -27,17 +27,24 @@ namespace QuizGameGUI
         User currentUser;
         List<Button> buttons;
         bool isAnswered;
-        public QuickPlayView(string username)
+        public QuickPlayView(string username,int quizIndex = -1)
         {
             InitializeComponent();
             //Accessing the user from the database:
             currentUser = UserManager.ListOfUsers.First(user => user.Username == username);
             //Getting a random quiz from our database - Different user then the player:
-            do
+            if(quizIndex == -1)
             {
-                quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
-            } while (quiz.Creator == username) ;
-            
+                do
+                {
+                    quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
+                } while (quiz.Creator == username) ;
+            }
+            else
+            {
+                quiz = UserManager.ListOfQuizzes.First(x => x.Id == quizIndex);
+            }
+
             creatorUsername.Content = $"Made by: {quiz.Creator}";
             
             //Getting the number of question in the current quiz:
