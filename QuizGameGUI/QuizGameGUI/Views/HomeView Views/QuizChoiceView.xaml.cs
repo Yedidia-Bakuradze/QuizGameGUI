@@ -26,6 +26,7 @@ namespace QuizGameGUI.Views.HomeView_Views
         {
             InitializeComponent();
             user = UserManager.ListOfUsers.First(x => x.Username == username);
+            categoryTyep.Text = category;
 
             //Shows all category related quizzes:
             foreach(Quiz quiz in UserManager.ListOfQuizzes)
