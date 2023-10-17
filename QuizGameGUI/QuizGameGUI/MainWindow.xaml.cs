@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizGameGUI.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,15 @@ namespace QuizGameGUI
             InitializeComponent();
             Window windows = Window.GetWindow(this);
             windows.Content = new LobbyView();
+        }
+
+
+        private void OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
         }
     }
 }

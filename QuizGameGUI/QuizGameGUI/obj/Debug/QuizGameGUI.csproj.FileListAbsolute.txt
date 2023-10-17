@@ -140,3 +140,96 @@ C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Qu
 C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.csproj.CoreCompileInputs.cache
 C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.exe
 C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\QuizGameGUI.pdb
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ButtonRoundingStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\NavegationButtonsStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\SearchbarStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\DiscoverView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LeaderboardView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LobbyVIew.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LoginView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PasswordResetView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PlayView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\QuestionEditorView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\SignupView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\DiscoverView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LeaderboardView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LobbyVIew.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LoginView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PasswordResetView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PlayView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\QuestionEditorView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\SignupView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileGeneralView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileGeneralView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileSecurityView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileSecurityView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\NoHoverEffectButton.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfilePrivacyView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfilePrivacyView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ButtonRotationAnimation.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\BtnRotationNoHover.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ImageRotationAnime.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\DiscoverView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\HomeView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\LeaderboardView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\PlayView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileGeneralView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfilePrivacyView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileSecurityView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuestionEditorView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\DiscoverView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\HomeView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\LeaderboardView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\PlayView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileGeneralView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfilePrivacyView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileSecurityView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuestionEditorView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyQuizzesView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyQuizzesView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ListitemRoundingStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\SubmitButtonRoundingStyle.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyLikedQuizzesView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyLikedQuizzesView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ButtonRoundingStyle.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\ListitemRoundingStyle.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\NoHoverEffectButton.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\SubmitButtonRoundingStyle.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\NavegationButtonsStyle.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Style Files\SearchbarStyle.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\DiscoverView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\HomeView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\LeaderboardView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LobbyVIew.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LoginView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PasswordResetView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\PlayView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileGeneralView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyLikedQuizzesView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyQuizzesView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfilePrivacyView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileSecurityView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuestionEditorView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\SignupView.g.cs
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\DiscoverView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\HomeView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\LeaderboardView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LobbyVIew.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\LoginView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\PasswordResetView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\PlayView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileGeneralView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyLikedQuizzesView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileMyQuizzesView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfilePrivacyView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileSecurityView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuestionEditorView.baml
+C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\SignupView.baml

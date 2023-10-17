@@ -1,13 +1,19 @@
 ﻿
 FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\App.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\DiscoverView.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\HomeView.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\LeaderboardView.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\LobbyVIew.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\LoginView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\HomeView Views\DiscoverView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\HomeView Views\HomeView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\HomeView Views\LeaderboardView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\LobbyVIew.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\LoginView.xaml;;
 FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\MainWindow.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\PasswordResetView.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\PlayView.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\QuestionEditorView.xaml;;
-FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\SignupView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\PasswordResetView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\HomeView Views\PlayView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\ProfileView Views\ProfileGeneralView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\ProfileView Views\ProfileMyLikedQuizzesView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\ProfileView Views\ProfileMyQuizzesView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\ProfileView Views\ProfilePrivacyView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\ProfileView Views\ProfileSecurityView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\ProfileView Views\ProfileView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\HomeView Views\QuestionEditorView.xaml;;
+FC:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\Views\SignupView.xaml;;
 
