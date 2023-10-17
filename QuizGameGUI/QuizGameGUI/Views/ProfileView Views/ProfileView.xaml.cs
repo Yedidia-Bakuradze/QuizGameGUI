@@ -63,5 +63,10 @@ namespace QuizGameGUI.Views
         {
             Window.GetWindow(this).Content = new HomeView(user.Username);
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

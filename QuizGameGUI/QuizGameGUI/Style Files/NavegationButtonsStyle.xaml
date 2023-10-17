@@ -4,7 +4,7 @@
            BasedOn="{StaticResource {x:Type ToggleButton}}"
            TargetType="{x:Type RadioButton}">
         <Style.Setters>
-            
+
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="RadioButton">
@@ -17,7 +17,7 @@
                                        VerticalAlignment="Center" Margin="10,0,0,0"
                                        FontSize="21" Foreground="#FFFFFF"/>
                         </Grid>
-                    
+
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -25,7 +25,7 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style.Setters>
-        
+
 
         <Style.Triggers>
 
