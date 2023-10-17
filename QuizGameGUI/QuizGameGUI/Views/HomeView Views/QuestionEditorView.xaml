@@ -72,14 +72,14 @@
             HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
             Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone" 
                 Background="{x:Null}" Foreground="White" FontSize="14" 
-                FontWeight="Bold" BorderBrush="{x:Null}"/>
-        
+                FontWeight="Bold" BorderBrush="{x:Null}" IsEnabled="False"/>
+
         <Button x:Name="nextQuestionButton" Grid.Column="1" Grid.Row="10"
                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
                 Content="Add Another Question" Width="250" Height="30" 
                 Click="AddQuestion" Foreground="White" Background="{x:Null}" 
-                FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}"/>
-        
+                FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}" IsEnabled="False"/>
+
 
     </Grid>
 </UserControl>
