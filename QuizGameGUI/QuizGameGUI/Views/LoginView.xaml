@@ -6,50 +6,53 @@
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
              d:DesignHeight="525" d:DesignWidth="720">
-    <Grid Background="#FF252737">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="10"/>
-        </Grid.RowDefinitions>
-         
-        <!--Fields' Titles:-->
-        <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Your Username:" FontFamily="Arial" Foreground="White" FontSize="14"/>
-        <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Your Password:" FontSize="16" FontFamily="Arial" Foreground="White"/>
-        
-        <!--Insert Fields:-->
-        <TextBox x:Name="usernameField" Grid.Column="1" Grid.Row="1"
+    <Border Background="#FF292C3D" CornerRadius="20">
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <!--Fields' Titles:-->
+            <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Your Username:" FontFamily="Arial" Foreground="White" FontSize="14"/>
+            <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Content="Your Password:" FontSize="16" FontFamily="Arial" Foreground="White"/>
+
+            <!--Insert Fields:-->
+            <TextBox x:Name="usernameField" Grid.Column="1" Grid.Row="1"
                  FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#FF353340" Foreground="White"/>
-        <TextBox x:Name="passwordField" Grid.Column="1" Grid.Row="3"
+            <TextBox x:Name="passwordField" Grid.Column="1" Grid.Row="3"
                  FontSize="26" VerticalContentAlignment="Center" TextChanged="TextboxTextChanged" Background="#FF353340" Foreground="White"/>
-        <Button x:Name="submitButton" Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center" Width="100"
+            <Button x:Name="submitButton" Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center" Width="100"
             Margin="0,20,0,0" Content="Submit" Click="UserLogin" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontSize="14"/>
-        
-        <!--Error Type: Wrong Password:-->
-        <Label x:Name="errorMessage" Visibility="Hidden" Grid.Column="1" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+
+            <!--Error Type: Wrong Password:-->
+            <Label x:Name="errorMessage" Visibility="Hidden" Grid.Column="1" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center"
            Content="Incorrect Password!" Foreground="Red"/>
-        <StackPanel x:Name="passwordResetRediraction" Visibility="Hidden" Grid.Column="1" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Content="Reset your password:"/>
-            <Button Content="Reset Now" Margin="10,0,0,0" Click="PasswordResetButton"/>
-        </StackPanel>
-        
-        <!--Error Type: User not found:-->
-        <StackPanel x:Name="signupRediraction" Visibility="Hidden" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5">
-            <Label Content="Create an accout:" Foreground="White"/>
-            <Button Content="Signup Now" Margin="10,0,0,0" Click="SignupButton" Background="#FF16AFFB"/>
-        </StackPanel>
+            <StackPanel x:Name="passwordResetRediraction" Visibility="Hidden" Grid.Column="1" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label Content="Reset your password:"/>
+                <Button Content="Reset Now" Margin="10,0,0,0" Click="PasswordResetButton"/>
+            </StackPanel>
+
+            <!--Error Type: User not found:-->
+            <StackPanel x:Name="signupRediraction" Visibility="Hidden" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5">
+                <Label Content="Create an accout:" Foreground="White"/>
+                <Button Content="Signup Now" Margin="10,0,0,0" Click="SignupButton" Background="#FF16AFFB"/>
+            </StackPanel>
 
 
-        
-    </Grid>
+
+        </Grid>
+    </Border>
+    
 </UserControl>
