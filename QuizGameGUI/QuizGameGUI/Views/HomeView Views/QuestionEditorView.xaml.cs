@@ -91,14 +91,14 @@ namespace QuizGameGUI
             quiz.Category = ((ListBoxItem)catergoryList.SelectedItem).Content as string;
             quiz.Name = quizNameField.Text;
             quiz.Description = quizDiscription.Text;
-            
-            //Adding the quiz to the global quiz list:
-            UserManager.ListOfQuizzes.Add(quiz);
 
 
+            quiz.SpeedRunCapable = quiz.QuizQuestions.Count() > 20;
             //Sum up message:
             MessageBox.Show($"Theme: {quiz.Category}\nYou've successful added {questionCount} questions.");
 
+            //Adding the quiz to the global quiz list:
+            UserManager.ListOfQuizzes.Add(quiz);
             //Identifying the user and adding the quiz to its database of quizzes:
             User currentUser = UserManager.ListOfUsers.First(user => user.Username == Username);
             currentUser.PersonalQuizzes.Add(quiz);

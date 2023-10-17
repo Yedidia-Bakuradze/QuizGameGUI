@@ -22,6 +22,7 @@ namespace QuizGameGUI
     public partial class DiscoverView : UserControl
     {
         string _username;
+        Quiz quiz;
         public DiscoverView(string username)
         {
             InitializeComponent();
@@ -52,6 +53,30 @@ namespace QuizGameGUI
         private void StartProgramming(object sender, RoutedEventArgs e)
         {
             Window.GetWindow(this).Content = new QuizChoiceView(_username, topicD.Text);
+        }
+
+        private void btn60SecondsClick(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuickPlayView(_username, GetRandomQuizID(), 60);
+
+        }
+
+        private void btn30SecondsClick(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuickPlayView(_username, GetRandomQuizID(), 30);
+        }
+        private void btn15sec_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuickPlayView(_username, GetRandomQuizID(), 15);
+        }
+
+        private int GetRandomQuizID()
+        {
+            do
+            {
+                quiz = UserManager.ListOfQuizzes[new Random().Next(UserManager.ListOfQuizzes.Count())];
+            } while (quiz.Creator == _username || !quiz.SpeedRunCapable);
+            return quiz.Id;
         }
     }
 }

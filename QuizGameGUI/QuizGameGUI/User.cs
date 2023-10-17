@@ -16,13 +16,14 @@ namespace QuizGameGUI
         public string Password { get; set; }
         //User's total score:
         public int Score { get; set; } = 0;
+        public int SpeedRunScore { get; set; } = 0;
         //User's personal quiz list:        
         public List<Quiz> PersonalQuizzes { get; set; }
         
         //User's personal list of quizzes that he liked
         public List<int> LikedQuizzes { get; set; }
 
-        public User(string name, string username, string password, int score = 0)
+        public User(string name, string username, string password, int score = 0, int speedRunScore = 0)
         {
             PersonalQuizzes = new List<Quiz>(){};
 
@@ -34,6 +35,7 @@ namespace QuizGameGUI
             Username = username;
             Password = password;
             Score = score;
+            SpeedRunScore = speedRunScore;
         }
 
     }

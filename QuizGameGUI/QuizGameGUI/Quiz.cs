@@ -12,11 +12,12 @@ namespace QuizGameGUI
         public string Creator { get; set; }
         public string Description { get; set; } = "No description";
         public string Name { get; set; }
+        public bool SpeedRunCapable { get; set; } = false;
 
         //A unique id for each quiz - The source value is in the UserManager class:
         public int Id { get; set; }
         public List<Question> QuizQuestions { get; set; }
-        public Quiz(string creator)
+        public Quiz(string creator,bool speedRunType=false)
         {
             QuizQuestions = new List<Question>() {
                 new Question("What's My Name", "Moshe","Yehuda","Elia","Yedidia","admin"),
@@ -27,6 +28,7 @@ namespace QuizGameGUI
             };
             Creator = creator;
             Id = UserManager.QuizId++;
+            SpeedRunCapable = speedRunType;
         }
     }
 }

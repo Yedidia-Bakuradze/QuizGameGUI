@@ -29,6 +29,7 @@ namespace QuizGameGUI
             User au = UserManager.ListOfUsers.First(x=>x.Username =="yedidia");
             a.Category = "History";
             a.Name = "First";
+            a.SpeedRunCapable = true;
             UserManager.ListOfQuizzes.Add(a);
             au.PersonalQuizzes.Add(a);
 

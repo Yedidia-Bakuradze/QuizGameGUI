@@ -61,11 +61,11 @@
                                 Foreground="White"/>
                             <StackPanel Margin="0,10,0,0">
                                 <Button x:Name="btnOneMinute" Style="{StaticResource ButtonRoundingStyle}"
-                                    Width="100" Height="30" Content="1 Minute"/>
+                                    Width="100" Height="30" Content="1 Minute" Click="btn60SecondsClick"/>
                                 <Button x:Name="btn30sec" Style="{StaticResource ButtonRoundingStyle}"
-                                    Margin="0,5,0,0" Width="100" Height="30" Content="30 Seconds"/>
+                                    Margin="0,5,0,0" Width="100" Height="30" Content="30 Seconds" Click="btn30SecondsClick"/>
                                 <Button x:Name="btn15sec" Style="{StaticResource ButtonRoundingStyle}"
-                                    Margin="0,5,0,0" Width="100" Height="30" Content="15 Seconds"/>
+                                    Margin="0,5,0,0" Width="100" Height="30" Content="15 Seconds" Click="btn15sec_Click"/>
 
                             </StackPanel>
                         </StackPanel>

@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CountdownTimer.cs" />
     <Compile Include="Views\HomeView Views\DiscoverView.xaml.cs">
       <DependentUpon>DiscoverView.xaml</DependentUpon>
     </Compile>
