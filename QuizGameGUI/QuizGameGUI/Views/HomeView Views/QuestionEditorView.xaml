@@ -102,8 +102,8 @@
                              HorizontalContentAlignment="Center" SelectionChanged="CategorySelectionChanged">
                         <ListBoxItem Margin="0,10,0,0" Content="Scicence"/>
                         <ListBoxItem Margin="0,10,0,0" Content="Mathematics"/>
-                        <ListBoxItem Margin="0,10,0,0" Content="Geography"/>
-                        <ListBoxItem Margin="0,10,0,10" Content="Random"/>
+                        <ListBoxItem Margin="0,10,0,0" Content="History"/>
+                        <ListBoxItem Margin="0,10,0,10" Content="Programming"/>
                     </ListBox>
                 </Border>
                 
