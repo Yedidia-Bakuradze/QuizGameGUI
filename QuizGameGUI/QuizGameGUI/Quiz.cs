@@ -8,13 +8,15 @@ namespace QuizGameGUI
 {
     internal class Quiz
     {
-        public string Category { get; set; }
+        public string Category { get; set; } = "Other";
         public string Creator { get; set; }
-        
+        public string Description { get; set; } = "No description";
+        public string Name { get; set; }
+
         //A unique id for each quiz - The source value is in the UserManager class:
         public int Id { get; set; }
         public List<Question> QuizQuestions { get; set; }
-        public Quiz(string category, string creator)
+        public Quiz(string creator)
         {
             QuizQuestions = new List<Question>() {
                 new Question("What's My Name", "Moshe","Yehuda","Elia","Yedidia","admin"),
@@ -23,7 +25,6 @@ namespace QuizGameGUI
                 new Question("What's My College's Name", "JBL","Giga-El","High-Tech TM","JCT","admin"),
 
             };
-            Category = category;
             Creator = creator;
             Id = UserManager.QuizId++;
         }

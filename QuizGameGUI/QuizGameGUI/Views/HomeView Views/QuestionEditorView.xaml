@@ -6,80 +6,116 @@
              xmlns:local="clr-namespace:QuizGameGUI"
              mc:Ignorable="d" 
              d:DesignHeight="525" d:DesignWidth="720">
-    <Grid Background="#FF252737">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="240"/>
-            <ColumnDefinition Width="240"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
+    <Border Background="#FF252737" CornerRadius="10">
+        <Grid x:Name="questionEditor">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
 
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <Label x:Name="questionCounterField" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2"
-               HorizontalAlignment="Center" VerticalAlignment="Bottom"
-               Margin="0,0,0,15" Content="Question Number: " FontSize="24" Foreground="White"/>
-        
-        <!--Question's Field-->
-        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?"
-               HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"
-               FontSize="14" FontFamily="Arial Black" Margin="0,0,0,40" Foreground="White"/>
-        <TextBox x:Name="theQuestionFiled" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
-                 HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"
-                 HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
-                 FontSize="24" Width="300" Height="40" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
-        
-        <!--Answers' Field:-->
-        
-        <!--User's directions:-->
-        <Label Grid.Row="1" Grid.Column="1" Content="Enter the Theme Of The Quiz:"   
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
-        <Label Grid.Row="3" Grid.Column="1" Content="Enter Your first wrong answer:" 
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
-        <Label Grid.Row="5" Grid.Column="1" Content="Enter Your second wrong answer:"
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
-        <Label Grid.Row="7" Grid.Column="1" Content="Enter Your third wrong answer:" 
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
-        <Label Grid.Row="9" Grid.Column="1" Content="Enter Your only ture answer:"   
-               HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
-        
-        <!--User's Insert Field-->
-        <TextBox x:Name="quizTheme" Grid.Row="1" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
-        <TextBox x:Name="fAns1Field" Grid.Row="3" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Background="#FF353340" Foreground="White"/>
-        <TextBox x:Name="fAns2Field" Grid.Row="5" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Background="#FF353340" Foreground="White"/>
-        <TextBox x:Name="fAns3Field" Grid.Row="7" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
-        <TextBox x:Name="tAnsField" Grid.Row="9" Grid.Column="2"
-                 FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
-        
-        <!--Submit Button (Available only when all the fields are full):-->
-        <Button x:Name="quizDoneButton" Grid.Column="2"  Grid.Row="10"
-            HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-            Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone" 
-                Background="{x:Null}" Foreground="White" FontSize="14" 
-                FontWeight="Bold" BorderBrush="{x:Null}" IsEnabled="False"/>
+            <Label x:Name="questionCounterField" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                   Margin="0,0,0,15" Content="Question Number: " FontSize="24" Foreground="White"/>
 
-        <Button x:Name="nextQuestionButton" Grid.Column="1" Grid.Row="10"
+            <!--Question's Field-->
+            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Whats the Question?"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"
+                   FontSize="14" FontFamily="Arial Black" Margin="0,0,0,40" Foreground="White"/>
+            <TextBox x:Name="theQuestionFiled" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+                     HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"
+                     HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                     FontSize="24" Width="300" Height="40" TextChanged="TextboxValueChanged"
+                     Foreground="White" Background="#FF353340"/>
+
+            <!--Answers' Field:-->
+
+            <!--User's directions:-->
+            <Label Grid.Row="2" Grid.Column="1" Content="Enter Your first wrong answer:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
+            <Label Grid.Row="4" Grid.Column="1" Content="Enter Your second wrong answer:"
+                   HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
+            <Label Grid.Row="6" Grid.Column="1" Content="Enter Your third wrong answer:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
+            <Label Grid.Row="8" Grid.Column="1" Content="Enter Your only ture answer:"   
+                   HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Arial Black" Foreground="White"/>
+
+            <!--User's Insert Field-->
+            <TextBox x:Name="fAns1Field" Grid.Row="2" Grid.Column="2"
+                     FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Background="#FF353340" Foreground="White"/>
+            <TextBox x:Name="fAns2Field" Grid.Row="4" Grid.Column="2"
+                     FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Background="#FF353340" Foreground="White"/>
+            <TextBox x:Name="fAns3Field" Grid.Row="6" Grid.Column="2"
+                     FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
+            <TextBox x:Name="tAnsField" Grid.Row="8" Grid.Column="2"
+                     FontSize="24" VerticalContentAlignment="Center" TextChanged="TextboxValueChanged" Foreground="White" Background="#FF353340"/>
+
+            <!--Submit Button (Available only when all the fields are full):-->
+            <Button x:Name="quizDoneButton" Grid.Column="2"  Grid.Row="10"
                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
-                Content="Add Another Question" Width="250" Height="30" 
-                Click="AddQuestion" Foreground="White" Background="{x:Null}" 
-                FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}" IsEnabled="False"/>
+                Content="Finish The Quiz" Width="250" Height="30" Click="QuizDone" 
+                    Background="{x:Null}" Foreground="White" FontSize="14" 
+                    FontWeight="Bold" BorderBrush="{x:Null}" IsEnabled="False"/>
 
+            <Button x:Name="nextQuestionButton" Grid.Column="1" Grid.Row="10"
+                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5"
+                    Content="Add Another Question" Width="250" Height="30" 
+                    Click="AddQuestion" Foreground="White" Background="{x:Null}" 
+                    FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}" IsEnabled="False"/>
 
-    </Grid>
+            <!--Final step to submit the quiz:-->
+            <StackPanel Grid.Column="0" Grid.ColumnSpan="4" Visibility="Hidden"
+                        Grid.Row="0" Grid.RowSpan="11" x:Name="finalField"
+                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <TextBlock Foreground="#FFFFFF" Text="Enter the name of the quiz"/>
+                <Border Width="250" Height="40" Background="#FF353340" CornerRadius="5">
+                    <TextBox FontSize="21" VerticalContentAlignment="Center"
+                             Foreground="#FFFFFF"
+                             x:Name="quizNameField" Background="Transparent" BorderThickness="0" TextChanged="QuizNameValueChanged"/>
+                </Border>
+                
+                <TextBlock Margin="0,10,0,0" Foreground="#FFFFFF" Text="Enter a discription of the quiz"/>
+                <Border Width="250" Height="40" Background="#FF353340" CornerRadius="5">
+                    <TextBox FontSize="21" VerticalContentAlignment="Center"
+                             Foreground="#FFFFFF" x:Name="quizDiscription" Background="Transparent" BorderThickness="0" TextChanged="QuizNameValueChanged"/>
+                </Border>
+
+                <TextBlock Margin="0,10,0,0" Foreground="#FFFFFF" Text="Choose a category"/>
+                
+                <Border CornerRadius="5" Background="#FF353340">
+                    <ListBox x:Name="catergoryList" BorderThickness="0" Background="Transparent" Foreground="AliceBlue"
+                             HorizontalContentAlignment="Center" SelectionChanged="CategorySelectionChanged">
+                        <ListBoxItem Margin="0,10,0,0" Content="Scicence"/>
+                        <ListBoxItem Margin="0,10,0,0" Content="Mathematics"/>
+                        <ListBoxItem Margin="0,10,0,0" Content="Geography"/>
+                        <ListBoxItem Margin="0,10,0,10" Content="Random"/>
+                    </ListBox>
+                </Border>
+                
+                <Button x:Name="btnSubmit" Margin="0,10,0,0" Background="#3FC845" Content="Submit Quiz" Foreground="#FFFFFF"
+                        Style="{StaticResource SubmitButtonRoundingStyle}" Height="30" Width="100"
+                        IsEnabled="False" Click="SubmitChanges"/>
+
+                
+                <Label x:Name="errorMsg" Content=""
+                       HorizontalContentAlignment="Center" Foreground="Red"/>
+            
+            </StackPanel>
+        </Grid>
+    </Border>
 </UserControl>

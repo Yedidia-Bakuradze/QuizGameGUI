@@ -25,15 +25,24 @@ namespace QuizGameGUI.Views.ProfileView_Views
         Quiz quiz;
         Question question;
         string resourceFile = "ListitemRoundingStyle";
+        ListBoxItem quizSelected, questionSelected;
         public ProfileMyQuizzesView(string username)
         {
             InitializeComponent();
             user = UserManager.ListOfUsers.First(x=>x.Username == username);
-            foreach(Quiz quiz in user.PersonalQuizzes)
+            StartValueShowUp();
+        }
+
+        private void StartValueShowUp()
+        {
+            listOfQuizzes.Items.Clear();
+            questionEditor.Visibility = Visibility.Hidden;
+            questionPage.Visibility = Visibility.Hidden;
+            foreach (Quiz quiz in user.PersonalQuizzes)
             {
                 ListBoxItem item = new ListBoxItem();
                 item.Style = (Style)FindResource(resourceFile);
-                item.Content = quiz.Category;
+                item.Content = quiz.Name;
                 item.Tag = quiz.Id;
                 listOfQuizzes.Items.Add(item);
             }
@@ -42,14 +51,16 @@ namespace QuizGameGUI.Views.ProfileView_Views
         //When quiz is pressed - Its questions would show up:
         private void ShowAssociatedQuestions(object sender, SelectionChangedEventArgs e)
         {
-            ListBoxItem currentItem = (ListBoxItem)listOfQuizzes.SelectedItem;
+            questionEditor.Visibility=Visibility.Hidden;
+            quizSelected = (ListBoxItem)listOfQuizzes.SelectedItem;
             
             //Getting the quiz:
-            quiz = UserManager.ListOfQuizzes.Find(x=>x.Id == Int32.Parse(currentItem.Tag.ToString()));
+            quiz = user.PersonalQuizzes.Find(x=>x.Id == Int32.Parse(quizSelected.Tag.ToString()));
             numOfQuestions.Text = quiz.QuizQuestions.Count().ToString();
             
             //Filling up the questions' list box:
             questionPage.Visibility = Visibility.Visible;
+            listOfQuestions.Items.Clear();
             foreach (Question question in quiz.QuizQuestions)
             {
                 ListBoxItem item = new ListBoxItem();
@@ -62,16 +73,21 @@ namespace QuizGameGUI.Views.ProfileView_Views
         //When question is selected - It's values would appear in the question editor page:
         private void ShowQuestionsValues(object sender, SelectionChangedEventArgs e)
         {
-            //Clearing the fields:
-            questionField.Text = fAns1Field.Text = fAns2Field.Text = fAns3Field.Text = tAnsField.Text = string.Empty;
-            questionEditor.Visibility = Visibility.Visible;
-            ShowValues();
+            if(listOfQuestions.SelectedItems.Count > 0)
+            {
+                //Clearing the fields:
+                questionEditor.Visibility = Visibility.Visible;
+                questionField.Text = fAns1Field.Text = fAns2Field.Text = fAns3Field.Text = tAnsField.Text = string.Empty;
+                ShowValues();
+
+            }
         }
 
         //Saves the given values into the proper variables:
         private void SaveChanges(object sender, RoutedEventArgs e)
         {
             question.Title = questionField.Text;
+            ((ListBoxItem)listOfQuestions.SelectedItem).Content = question.Title;
             question.ListOfAnswers[0] = fAns1Field.Text;
             question.ListOfAnswers[1] = fAns2Field.Text;
             question.ListOfAnswers[2] = fAns3Field.Text;
@@ -87,8 +103,8 @@ namespace QuizGameGUI.Views.ProfileView_Views
         //Populates the fields withe the question and answers' values:
         private void ShowValues()
         {
-            ListBoxItem item = (ListBoxItem)listOfQuestions.SelectedItem;
-            question = quiz.QuizQuestions.First(q => q.Title == (string)item.Content);
+            questionSelected = (ListBoxItem)listOfQuestions.SelectedItem;
+            question = quiz.QuizQuestions.First(q => q.Title == (string)questionSelected.Content);
             questionField.Text = question.Title;
             fAns1Field.Text = question.ListOfAnswers[0];
             fAns2Field.Text = question.ListOfAnswers[1];
