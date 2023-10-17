@@ -20,7 +20,7 @@ namespace QuizGameGUI
 
         public static List<Quiz> ListOfQuizzes { get; set; } = new List<Quiz>()
         {
-            new Quiz("Science","yedidia"),
+            new Quiz("yedidia"),
         };
 
     }

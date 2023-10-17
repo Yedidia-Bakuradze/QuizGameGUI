@@ -24,10 +24,7 @@ namespace QuizGameGUI
 
         public User(string name, string username, string password, int score = 0)
         {
-            PersonalQuizzes = new List<Quiz>()
-            {
-                new Quiz("Science", "admin"),
-            };
+            PersonalQuizzes = new List<Quiz>(){};
 
             LikedQuizzes = new List<int>()
             {
