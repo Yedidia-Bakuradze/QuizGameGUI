@@ -64,6 +64,9 @@
     <Compile Include="Views\HomeView Views\LeaderboardView.xaml.cs">
       <DependentUpon>LeaderboardView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\HomeView Views\QuizChoiceView.xaml.cs">
+      <DependentUpon>QuizChoiceView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LobbyVIew.xaml.cs">
       <DependentUpon>LobbyVIew.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\HomeView Views\LeaderboardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeView Views\QuizChoiceView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

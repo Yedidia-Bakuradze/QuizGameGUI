@@ -86,15 +86,48 @@
                     Margin="0,0,0,20"/>
 
                 <StackPanel Orientation="Horizontal">
+                    <!--Science view:-->
                     <Border Width="150" Height="150"
                         Background="#844eff" CornerRadius="10"
-                        Margin="0"/>
+                        Margin="0">
+                        <StackPanel Margin="10">
+                            <TextBlock x:Name="topicA" Text="Science" FontSize="21"
+                                       Foreground="#FFF"/>
+                            <Label Content="Dive deep into the&#xA;wide world of Physics"/>
+                            <Button Margin="0,10,0,0" Height="30" Width="100"
+                                    Style="{StaticResource ButtonRoundingStyle}" Content="Start Now" Click="StartScience"/>
+                        </StackPanel>
+                    </Border>
+                    <!--Mathematics view:-->
                     <Border Width="150" Height="150"
-                        Background="#4e99ff" CornerRadius="10"/>
+                        Background="#4e99ff" CornerRadius="10">
+                        <StackPanel Margin="10">
+                            <TextBlock x:Name="topicB" Text="Mathematics" FontSize="21" Foreground="#FFF"/>
+                            <Label Content="Dive deep into the&#xA;wide world of Physics"/>
+                            <Button Margin="0,10,0,0" Height="30" Width="100"
+                                Style="{StaticResource ButtonRoundingStyle}" Content="Start Now" Click="StartMathematics"/>
+                        </StackPanel>
+                    </Border>
+                    <!--History view:-->
                     <Border Width="150" Height="150"
-                        Background="#4eff91" CornerRadius="10"/>
+                        Background="#4eff91" CornerRadius="10">
+                        <StackPanel Margin="10">
+                            <TextBlock x:Name="topicC" Text="History" FontSize="21" Foreground="#FFF"/>
+                            <Label Content="Dive deep into the&#xA;wide world of Physics"/>
+                            <Button Margin="0,10,0,0" Height="30" Width="100"
+                                    Style="{StaticResource ButtonRoundingStyle}" Content="Start Now" Click="StartHistory"/>
+                        </StackPanel>
+                    </Border>
+                    <!--Programming view:-->
                     <Border Width="150" Height="150"
-                        Background="#ecff4e" CornerRadius="10"/>
+                        Background="#ecff4e" CornerRadius="10">
+                        <StackPanel Margin="10">
+                            <TextBlock x:Name="topicD" Text="Programming" FontSize="21" Foreground="Blue"/>
+                            <Label Content="Dive deep into the&#xA;wide world of Physics"/>
+                            <Button Margin="0,10,0,0" Height="30" Width="100"
+                                    Style="{StaticResource ButtonRoundingStyle}" Content="Start Now" Click="StartProgramming"/>
+                        </StackPanel>
+                    </Border>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

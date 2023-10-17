@@ -233,3 +233,5 @@ C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Vi
 C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\ProfileView Views\ProfileView.baml
 C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuestionEditorView.baml
 C:\Users\meirc\Desktop\Repos\c#\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\SignupView.baml
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuizChoiceView.g.cs
+C:\Users\yedid\Documents\Programming\Apps and projects\Personal Projects\QuizGameGUI\QuizGameGUI\QuizGameGUI\obj\Debug\Views\HomeView Views\QuizChoiceView.baml

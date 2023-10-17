@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizGameGUI.Views.HomeView_Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,26 @@ namespace QuizGameGUI
         {
             Window window = Window.GetWindow(this);
             window.Content = new QuickPlayView(_username);
+        }
+
+        private void StartScience(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuizChoiceView(_username, topicA.Text);
+        }
+
+        private void StartMathematics(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuizChoiceView(_username, topicB.Text);
+        }
+
+        private void StartHistory(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuizChoiceView(_username, topicC.Text);
+        }
+
+        private void StartProgramming(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = new QuizChoiceView(_username, topicD.Text);
         }
     }
 }
