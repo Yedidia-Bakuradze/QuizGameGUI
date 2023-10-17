@@ -20,15 +20,39 @@ namespace QuizGameGUI
     /// </summary>
     public partial class LeaderboardView : UserControl
     {
+        enum Modes { Regular,Speedrun};
+        Modes mode = Modes.Regular;
+        List<User> top10users;
         public LeaderboardView()
         {
             InitializeComponent();
+            ShowData();
+        }
 
-            var top10users = UserManager.ListOfUsers.OrderByDescending(user => user.Score).Take(10).ToList();
+        //Changes the mode of appearance:
+        private void btnChangeMode_Click(object sender, RoutedEventArgs e)
+        {
+            mode = (mode == Modes.Regular)? Modes.Speedrun: Modes.Regular;
+            btnChangeMode.Content = (mode == Modes.Regular) ? "Speedrun Mode" : "Regular Mode";
+            ShowData();
+        }
+
+        //Shows the data according to the current mode:
+        private void ShowData()
+        {
+            //Reset values:
+            listScores.Items.Clear(); 
+            listPlayers.Items.Clear();
+            
+            //Select players based on the show mode:
+            top10users = (mode == Modes.Regular)?UserManager.ListOfUsers.OrderByDescending(user => user.Score).Take(10).ToList():
+                UserManager.ListOfUsers.OrderByDescending(user => user.SpeedRunScore).Take(10).ToList();
+            
+            //Add the values to the lists:
             foreach (var user in top10users)
             {
                 listPlayers.Items.Add(user.Username);
-                listScores.Items.Add(user.Score);
+                listScores.Items.Add((mode == Modes.Regular)?user.Score:user.SpeedRunScore);
             }
         }
     }

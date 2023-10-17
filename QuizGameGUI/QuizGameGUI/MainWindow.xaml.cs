@@ -30,6 +30,7 @@ namespace QuizGameGUI
             a.Category = "History";
             a.Name = "First";
             a.SpeedRunCapable = true;
+            au.SpeedRunScore = 100;
             UserManager.ListOfQuizzes.Add(a);
             au.PersonalQuizzes.Add(a);
 
@@ -37,6 +38,7 @@ namespace QuizGameGUI
             User bu = UserManager.ListOfUsers.First(x=>x.Username =="admin");
             b.Category = "Science";
             b.Name = "First";
+            bu.SpeedRunScore = 8;
             UserManager.ListOfQuizzes.Add(b);
             bu.PersonalQuizzes.Add(b);
 
@@ -44,6 +46,7 @@ namespace QuizGameGUI
             c.Category = "Programming";
             User cu = UserManager.ListOfUsers.First(x=>x.Username =="meir");
             c.Name = "First";
+            cu.SpeedRunScore = 2;
             UserManager.ListOfQuizzes.Add(c);
             cu.PersonalQuizzes.Add(c);
 
@@ -51,6 +54,7 @@ namespace QuizGameGUI
             d.Category = "Mathematics";
             User du = UserManager.ListOfUsers.First(x=>x.Username =="shmuel");
             d.Name = "First";
+            du.SpeedRunScore = 48;
             UserManager.ListOfQuizzes.Add(d);
             du.PersonalQuizzes.Add(d);
 
